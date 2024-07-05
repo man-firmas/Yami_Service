@@ -10,13 +10,13 @@ import java.io.IOException;
 public class Launch extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Launch.class.getResource("/co/ao/yami_service/Telas/hello-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Launch.class.getResource("/co/ao/yami_service/Telas/tela_login.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
         stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.show();
     }
-//jlskjflkjlsf
+//
     public static void main(String[] args) {
         launch();
     }
