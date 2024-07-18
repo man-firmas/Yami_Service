@@ -123,7 +123,8 @@ public static Stage stage_registar= null;
        } catch (ClassNotFoundException | SQLException | IOException ex) {
            Logger.getLogger(Tela_LoginController.class.getName()).log(Level.SEVERE, null, ex);
        }
-    }    
+    }
+    //hkuhkj vchghgvgn
     @FXML
  private void makeStageDragable(){
    parent_login.setOnMousePressed((event)->{

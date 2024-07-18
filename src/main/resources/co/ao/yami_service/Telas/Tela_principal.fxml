@@ -1,0 +1,1506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.CheckListView?>
+
+<BorderPane fx:id="parent_login" maxHeight="-Infinity" style="-fx-background-color: #FFFFFF;" stylesheets="@../../../../styles/style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.ao.yami_service.Tela_principalController">
+   <center>
+      <AnchorPane fx:id="Painel_geral">
+
+         <AnchorPane id="AnchorPane" fx:id="Painel_Inicio" style="-fx-background-color: #DFEDFD;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <AnchorPane fx:id="cabecario" layoutX="10.0" layoutY="117.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="69.0" prefWidth="1125.0" style="-fx-background-color: #FFFFFF;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="12.0">
+               <Label layoutX="14.0" layoutY="8.0" prefHeight="21.0" prefWidth="152.0" text="O. S. em Andamento" textFill="#5370b9">
+                  <font>
+                     <Font name="System Bold" size="15.0" />
+                  </font>
+               </Label>
+               <TextField layoutX="840.0" layoutY="5.0" prefHeight="29.0" prefWidth="188.0" promptText="pesquisar" style="-fx-background-radius: 9px;" AnchorPane.rightAnchor="97.0">
+                  <font>
+                     <Font name="Century Gothic Italic" size="13.0" />
+                  </font>
+               </TextField>
+               <Label layoutX="5.0" layoutY="44.0" prefHeight="20.0" prefWidth="157.0" style="-fx-background-color: #BFD3E8;" text="   Data de Início" textFill="#4d4a4a">
+                  <font>
+                     <Font name="Franklin Gothic Demi Cond" size="15.0" />
+                  </font>
+               </Label>
+               <Label layoutX="138.0" layoutY="44.0" prefHeight="20.0" prefWidth="152.0" style="-fx-background-color: #BFD3E8;" text="Cliente" textFill="#4d4a4a">
+                  <font>
+                     <Font name="Franklin Gothic Demi Cond" size="15.0" />
+                  </font>
+               </Label>
+               <Label layoutX="288.0" layoutY="44.0" prefHeight="20.0" prefWidth="132.0" style="-fx-background-color: #BFD3E8;" text=" Dias Depois" textFill="#4d4a4a">
+                  <font>
+                     <Font name="Franklin Gothic Demi Cond" size="15.0" />
+                  </font>
+               </Label>
+               <Label layoutX="696.0" layoutY="44.0" prefHeight="20.0" prefWidth="86.0" style="-fx-background-color: #BFD3E8;" text="   % Pago" textFill="#4d4a4a">
+                  <font>
+                     <Font name="Franklin Gothic Demi Cond" size="15.0" />
+                  </font>
+               </Label>
+               <Label layoutX="570.0" layoutY="44.0" prefHeight="20.0" prefWidth="129.0" style="-fx-background-color: #BFD3E8;" text="   Operador" textFill="#4d4a4a">
+                  <font>
+                     <Font name="Franklin Gothic Demi Cond" size="15.0" />
+                  </font>
+               </Label>
+               <Label layoutX="416.0" layoutY="44.0" prefHeight="20.0" prefWidth="155.0" style="-fx-background-color: #BFD3E8;" text="Nº de Acessório" textFill="#4d4a4a">
+                  <font>
+                     <Font name="Franklin Gothic Demi Cond" size="15.0" />
+                  </font>
+               </Label>
+               <Label layoutX="1021.0" layoutY="44.0" prefHeight="20.0" prefWidth="100.0" style="-fx-background-color: #BFD3E8;" text="      status" textFill="#4d4a4a">
+                  <font>
+                     <Font name="Franklin Gothic Demi Cond" size="15.0" />
+                  </font>
+               </Label>
+               <Label layoutX="772.0" layoutY="44.0" prefHeight="20.0" prefWidth="142.0" style="-fx-background-color: #BFD3E8;" text="    Montant. Pago" textFill="#4d4a4a">
+                  <font>
+                     <Font name="Franklin Gothic Demi Cond" size="15.0" />
+                  </font>
+               </Label>
+               <Label layoutX="901.0" layoutY="44.0" prefHeight="20.0" prefWidth="128.0" style="-fx-background-color: #BFD3E8;" text="   Orçamento" textFill="#4d4a4a">
+                  <font>
+                     <Font name="Franklin Gothic Demi Cond" size="15.0" />
+                  </font>
+               </Label>
+            </AnchorPane>
+            <AnchorPane fx:id="ReportShow12" layoutX="10.0" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="273.0" style="-fx-background-color: #4179A7;">
+               <Label alignment="CENTER_RIGHT" layoutX="218.0" layoutY="16.0" prefHeight="30.0" prefWidth="40.0" text="60" textFill="#cbd2e4">
+                  <font>
+                     <Font name="System Bold" size="30.0" />
+                  </font>
+               </Label>
+               <Label layoutX="54.0" layoutY="49.0" prefHeight="21.0" prefWidth="211.0" text="Ordem de  S. em Andamento" textFill="#cbd2e4" AnchorPane.leftAnchor="54.0" AnchorPane.rightAnchor="8.0">
+                  <font>
+                     <Font name="System Bold" size="15.0" />
+                  </font>
+               </Label>
+            </AnchorPane>
+            <AnchorPane fx:id="ReportShow121" layoutX="294.0" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="273.0" style="-fx-background-color: #816C84;" AnchorPane.leftAnchor="294.0" AnchorPane.rightAnchor="580.0">
+               <Label alignment="CENTER_RIGHT" layoutX="211.0" layoutY="13.0" prefHeight="40.0" prefWidth="55.0" text="70" textFill="#bfb3c1">
+                  <font>
+                     <Font name="System Bold" size="30.0" />
+                  </font>
+               </Label>
+               <Label layoutX="54.0" layoutY="48.0" prefHeight="21.0" prefWidth="215.0" text="Print Service Entregue no Més" textFill="#bfb3c1">
+                  <font>
+                     <Font name="System Bold" size="15.0" />
+                  </font>
+               </Label>
+            </AnchorPane>
+            <AnchorPane fx:id="ReportShow1211" layoutX="578.0" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="273.0" style="-fx-background-color: #9B7979;" AnchorPane.rightAnchor="295.0">
+               <Label alignment="CENTER_RIGHT" layoutX="198.0" layoutY="12.0" prefHeight="45.0" prefWidth="70.0" text="60" textFill="#d7cccc">
+                  <font>
+                     <Font name="System Bold" size="30.0" />
+                  </font>
+               </Label>
+               <Label layoutX="40.0" layoutY="48.0" prefHeight="21.0" prefWidth="248.0" text="Computadores Entregue no Més" textFill="#d7cccc">
+                  <font>
+                     <Font name="System Bold" size="15.0" />
+                  </font>
+               </Label>
+            </AnchorPane>
+            <AnchorPane fx:id="ReportShow12111" layoutX="862.0" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="273.0" style="-fx-background-color: #C7CBC7;" AnchorPane.rightAnchor="10.0">
+               <Label alignment="CENTER_RIGHT" layoutX="203.0" layoutY="15.0" prefHeight="30.0" prefWidth="65.0" text="60" textFill="#6b6b6b">
+                  <font>
+                     <Font name="System Bold" size="30.0" />
+                  </font>
+               </Label>
+               <Label layoutX="66.0" layoutY="48.0" prefHeight="21.0" prefWidth="208.0" text="Venda de Acessórios no Més" textFill="#6b6b6b">
+                  <font>
+                     <Font name="System Bold" size="15.0" />
+                  </font>
+               </Label>
+            </AnchorPane>
+            <ScrollPane layoutX="9.0" layoutY="186.0" prefHeight="297.0" prefWidth="1124.0" AnchorPane.bottomAnchor="182.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="186.0">
+               <VBox fx:id="pn_report" style="-fx-background-color: #FFFFFF;" />
+            </ScrollPane>
+            <AnchorPane layoutX="9.0" layoutY="489.0" prefHeight="171.0" prefWidth="556.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="9.0">
+
+               <Label layoutX="152.0" layoutY="13.0" maxWidth="-Infinity" prefHeight="20.0" prefWidth="76.0" text=" 11/01/2021" textFill="#8a8080">
+                  <font>
+                     <Font name="Franklin Gothic Demi Cond" size="13.0" />
+                  </font>
+               </Label>
+               <Label layoutX="211.0" layoutY="13.0" maxWidth="-Infinity" nodeOrientation="RIGHT_TO_LEFT" prefHeight="20.0" prefWidth="117.0" text="a      15/01/2021" textFill="#8a8080">
+                  <font>
+                     <Font name="Franklin Gothic Demi Cond" size="13.0" />
+                  </font>
+               </Label>
+               <Separator layoutX="6.0" layoutY="35.0" prefHeight="0.0" prefWidth="541.0" />
+            </AnchorPane>
+            <AnchorPane layoutX="576.0" layoutY="489.0" prefHeight="170.0" prefWidth="559.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="576.0" AnchorPane.rightAnchor="12.0">
+
+               <Label layoutX="152.0" layoutY="13.0" maxWidth="-Infinity" prefHeight="20.0" prefWidth="76.0" text=" 11/01/2021" textFill="#8a8080">
+                  <font>
+                     <Font name="Franklin Gothic Demi Cond" size="13.0" />
+                  </font>
+               </Label>
+               <Label layoutX="211.0" layoutY="13.0" maxWidth="-Infinity" nodeOrientation="RIGHT_TO_LEFT" prefHeight="20.0" prefWidth="117.0" text="a      15/01/2021" textFill="#8a8080">
+                  <font>
+                     <Font name="Franklin Gothic Demi Cond" size="13.0" />
+                  </font>
+               </Label>
+               <Separator layoutX="6.0" layoutY="35.0" prefHeight="0.0" prefWidth="541.0" />
+            </AnchorPane>
+         </AnchorPane>
+         <AnchorPane id="AnchorPane" fx:id="Painel_Cadastro" style="-fx-background-color: #DFEDFD;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <TabPane stylesheets="@../../../../styles/style.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <Tab text="Cliente">
+                  <AnchorPane minHeight="0.0" minWidth="0.0">
+                     <AnchorPane fx:id="painel_clinte" layoutX="7.0" layoutY="12.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5px;" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="12.0">
+                        <AnchorPane layoutX="11.0" layoutY="56.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="947.0" style="-fx-border-color: #AD85B6; -fx-border-width: 1px; -fx-border-radius: 6px;" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="168.0">
+                           <Label layoutX="1.0" layoutY="14.0" prefHeight="35.0" prefWidth="947.0" style="-fx-background-color: #C8ADCE; -fx-background-radius: 5px 5px 0px 0px;" text="  Cliente." textFill="#51404f" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <font>
+                                 <Font name="System Bold" size="15.0" />
+                              </font>
+                           </Label>
+                           <TextField fx:id="textField_nomeCliente" layoutX="343.0" layoutY="53.0" prefHeight="28.0" prefWidth="244.0" promptText="nome cliente" AnchorPane.leftAnchor="342.0" AnchorPane.rightAnchor="360.0">
+                              <font>
+                                 <Font name="Century Gothic" size="14.0" />
+                              </font>
+                           </TextField>
+                           <Pane layoutX="10.0" layoutY="53.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" />
+                           <Pane layoutX="687.0" layoutY="54.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" AnchorPane.rightAnchor="235.0" />
+                           <Pane layoutX="318.0" layoutY="53.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" AnchorPane.leftAnchor="317.0" />
+                           <TextField fx:id="textField_codCliente" editable="false" layoutX="35.0" layoutY="53.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="28.0" prefWidth="70.0" promptText="codigo" style="-fx-background-color: #CAC6C6;">
+                              <font>
+                                 <Font name="Century Gothic" size="14.0" />
+                              </font>
+                           </TextField>
+                           <ComboBox fx:id="combobox_PersonJuri" editable="true" layoutX="712.0" layoutY="54.0" prefHeight="28.0" prefWidth="162.0" promptText="Personalidade Jurídica" AnchorPane.rightAnchor="73.0" />
+                        </AnchorPane>
+                        <TableView fx:id="tableView_Cliente" layoutX="3.0" layoutY="376.0" onMouseClicked="#selectTable_Clien" prefHeight="226.0" prefWidth="1116.0" styleClass="tabela_listar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="376.0" />
+                        <TextArea fx:id="textA_descriçãoCliente" layoutX="665.0" layoutY="240.0" prefHeight="119.0" prefWidth="446.0" promptText="Descrição / Cliente" AnchorPane.rightAnchor="15.0">
+                           <font>
+                              <Font name="Century Gothic" size="13.0" />
+                           </font>
+                        </TextArea>
+                        <Label layoutX="14.0" layoutY="167.0" text="Endereço" underline="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btn_guardar_clien" layoutX="208.0" layoutY="11.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#cadastra_Cliente" prefHeight="35.0" prefWidth="124.0" text="Guardar" textFill="#464545">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" translateX="-12.0">
+                                 <Image url="@../../../../img_config/Save_32px.png" />
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btn_actualizar_clien" layoutX="415.0" layoutY="11.0" mnemonicParsing="false" onAction="#actualizar_cadast_client" prefHeight="32.0" prefWidth="125.0" text="Actualizar" textFill="#464545" AnchorPane.leftAnchor="415.0" AnchorPane.rightAnchor="586.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" translateX="-6.0">
+
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btn_eliminar_clien" layoutX="618.0" layoutY="10.0" mnemonicParsing="false" onAction="#cadastra_Cliente" prefHeight="32.0" prefWidth="125.0" text="Eliminar" textFill="#464545" AnchorPane.rightAnchor="385.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="27.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" translateX="-11.0">
+                                 <Image url="@../../../../img_config/Delete_32px.png" />
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Label fx:id="Label_fotoCliente" alignment="CENTER" contentDisplay="CENTER" layoutX="975.0" layoutY="14.0" maxHeight="143.0" maxWidth="136.0" minHeight="143.0" minWidth="136.0" onMouseClicked="#carregar_foto_Clien" prefHeight="143.0" prefWidth="136.0" style="-fx-background-color: #FFFFFF; -fx-border-width: 3px; -fx-border-color: #AD85B6;" AnchorPane.rightAnchor="15.0">
+                           <graphic>
+                              <ImageView fx:id="imageView_cad_clien" fitHeight="135.0" fitWidth="125.7" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                        <Pane layoutX="11.0" layoutY="192.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" />
+                        <Pane layoutX="328.0" layoutY="192.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" AnchorPane.leftAnchor="328.0" />
+                        <Label layoutX="328.0" layoutY="168.0" text="Contacto  Movel" underline="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textField_contactMovClient" layoutX="353.0" layoutY="192.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#getContactSpace" prefHeight="28.0" prefWidth="244.0" promptText="Contacto Movel" AnchorPane.leftAnchor="353.0" AnchorPane.rightAnchor="529.0">
+                           <font>
+                              <Font name="Century Gothic" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="textField_enderecClliente" layoutX="36.0" layoutY="192.0" prefHeight="28.0" prefWidth="244.0" promptText="O endereço">
+                           <font>
+                              <Font name="Century Gothic" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Pane layoutX="667.0" layoutY="191.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" AnchorPane.rightAnchor="434.0" />
+                        <Label layoutX="667.0" layoutY="167.0" text="Contacto Fixo" underline="true" AnchorPane.rightAnchor="381.0">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textField_contactFixClient" layoutX="692.0" layoutY="191.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="28.0" prefWidth="244.0" promptText="Contacto Fixo" AnchorPane.rightAnchor="190.0">
+                           <font>
+                              <Font name="Century Gothic" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="16.0" layoutY="236.0" text="E-mail" underline="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="13.0" layoutY="261.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" />
+                        <Pane layoutX="328.0" layoutY="261.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" AnchorPane.leftAnchor="328.0" />
+                        <Label layoutX="330.0" layoutY="237.0" text="Nº Fical" underline="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textField_nif_clinte" layoutX="355.0" layoutY="261.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="28.0" prefWidth="244.0" promptText="Insira o NIF" AnchorPane.leftAnchor="353.0" AnchorPane.rightAnchor="529.0">
+                           <font>
+                              <Font name="Century Gothic" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="textField_emailClinte" layoutX="38.0" layoutY="261.0" prefHeight="28.0" prefWidth="244.0" promptText="email">
+                           <font>
+                              <Font name="Century Gothic" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="975.0" layoutY="197.0" text="Activar" AnchorPane.rightAnchor="107.0">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="306.0" text="Credito" underline="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="11.0" layoutY="331.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" />
+                        <Pane layoutX="328.0" layoutY="331.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" AnchorPane.leftAnchor="328.0" />
+                        <Label layoutX="328.0" layoutY="307.0" text="Débito" underline="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textField_debito" layoutX="353.0" layoutY="331.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#setValor_naoCorrete" onMouseExited="#setValorCorrete" onMouseReleased="#setValorCorrete" prefHeight="28.0" prefWidth="244.0" promptText="Débito" AnchorPane.leftAnchor="353.0" AnchorPane.rightAnchor="529.0">
+                           <font>
+                              <Font name="Century Gothic" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="textField_credit_cliente" layoutX="36.0" layoutY="331.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#setValor_naoCorrete" onMouseExited="#setValorCorrete" onMouseReleased="#setValorCorrete" prefHeight="28.0" prefWidth="244.0" promptText="crédito">
+                           <font>
+                              <Font name="Century Gothic" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="btn_novo_clien" layoutX="18.0" layoutY="11.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#cadastra_Cliente" prefHeight="32.0" prefWidth="125.0" text="Novo" textFill="#464545">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" translateX="-18.0">
+                                 <Image url="@../../../../img_config/Plus_48px.png" />
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btn_ConsultClient" graphicTextGap="1.0" layoutX="813.0" layoutY="10.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="146.0" text="Consultar Cli." textFill="#464545" AnchorPane.rightAnchor="169.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="27.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" translateX="-11.0">
+
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="6.0" right="-3.0" />
+                           </padding>
+                        </Button>
+                        <JFXComboBox fx:id="Combobox_listarOrd_Impr" layoutX="949.0" layoutY="171.0" prefHeight="25.0" prefWidth="162.0" />
+                        <JFXCheckBox fx:id="Checkbox_selectAll" layoutX="816.0" layoutY="167.0" />
+                     </AnchorPane>
+                  </AnchorPane>
+               </Tab>
+               <Tab text="Fornecedor">
+                  <AnchorPane minHeight="0.0" minWidth="0.0">
+                     <AnchorPane fx:id="painel_clinte1" layoutX="7.0" layoutY="13.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5px;" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="12.0">
+                        <AnchorPane layoutX="11.0" layoutY="56.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="947.0" style="-fx-border-color: #85BC81; -fx-border-width: 1px; -fx-border-radius: 6px;" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="168.0">
+                           <Label layoutX="1.0" layoutY="14.0" prefHeight="35.0" prefWidth="947.0" style="-fx-background-color: #D2E6D0; -fx-background-radius: 5px 5px 0px 0px;" text="  Fornecedor." textFill="#425140" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <font>
+                                 <Font name="System Bold" size="15.0" />
+                              </font>
+                           </Label>
+                           <TextField fx:id="textField_nomeForn" layoutX="343.0" layoutY="53.0" prefHeight="28.0" prefWidth="244.0" promptText="nome fornecedor" AnchorPane.leftAnchor="342.0" AnchorPane.rightAnchor="360.0">
+                              <font>
+                                 <Font name="Century Gothic" size="14.0" />
+                              </font>
+                           </TextField>
+                           <Pane layoutX="10.0" layoutY="53.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" />
+                           <Pane layoutX="687.0" layoutY="54.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" AnchorPane.rightAnchor="235.0" />
+                           <Pane layoutX="318.0" layoutY="53.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" AnchorPane.leftAnchor="317.0" />
+                           <TextField fx:id="textField_codForn" editable="false" layoutX="35.0" layoutY="53.0" prefHeight="28.0" prefWidth="89.0" promptText="codigo" style="-fx-background-color: #CAC6C6;">
+                              <font>
+                                 <Font name="Century Gothic" size="14.0" />
+                              </font>
+                           </TextField>
+                           <ComboBox fx:id="combobox_PersonJuri_forn" editable="true" layoutX="712.0" layoutY="54.0" prefHeight="28.0" prefWidth="162.0" promptText="Personalidade Jurídica" AnchorPane.rightAnchor="73.0" />
+                        </AnchorPane>
+                        <TableView fx:id="tableView_forn" layoutX="24.0" layoutY="376.0" onMouseClicked="#selectTable_fornc" prefHeight="226.0" prefWidth="1116.0" styleClass="tabela_listar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="-18.0" AnchorPane.topAnchor="376.0" />
+                        <TextArea fx:id="textA_descrição_forn" layoutX="665.0" layoutY="240.0" prefHeight="119.0" prefWidth="446.0" promptText="Descrição / Cliente" AnchorPane.rightAnchor="15.0">
+                           <font>
+                              <Font name="Century Gothic" size="13.0" />
+                           </font>
+                        </TextArea>
+                        <Label layoutX="14.0" layoutY="167.0" text="Endereço" underline="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btn_guardar_forn" layoutX="214.0" layoutY="11.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#cadastra_forn" prefHeight="35.0" prefWidth="124.0" text="Guardar" textFill="#464545">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" translateX="-12.0">
+                                 <Image url="@../../../../img_config/Save_32px.png" />
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btn_actualizar_forn" layoutX="415.0" layoutY="11.0" mnemonicParsing="false" onAction="#actualizar_cadast_for" prefHeight="32.0" prefWidth="125.0" text="Actualizar" textFill="#464545" AnchorPane.leftAnchor="415.0" AnchorPane.rightAnchor="586.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" translateX="-6.0">
+
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btn_eliminar_forn" layoutX="619.0" layoutY="10.0" mnemonicParsing="false" onAction="#cadastra_forn" prefHeight="32.0" prefWidth="125.0" text="Eliminar" textFill="#464545" AnchorPane.rightAnchor="384.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="27.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" translateX="-11.0">
+                                 <Image url="@../../../../img_config/Delete_32px.png" />
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Label fx:id="Label_foto_forn" alignment="CENTER" contentDisplay="CENTER" layoutX="975.0" layoutY="14.0" maxHeight="143.0" maxWidth="136.0" minHeight="143.0" minWidth="136.0" onMouseClicked="#carregar_foto_Forn" prefHeight="143.0" prefWidth="136.0" style="-fx-background-color: #FFFFFF; -fx-border-width: 3px; -fx-border-color: #D2E6D0;" AnchorPane.rightAnchor="15.0">
+                           <graphic>
+                              <ImageView fx:id="imageView_cad_forn" fitHeight="135.0" fitWidth="125.7" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                        <Pane layoutX="11.0" layoutY="192.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" />
+                        <Pane layoutX="328.0" layoutY="192.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" AnchorPane.leftAnchor="328.0" />
+                        <Label layoutX="328.0" layoutY="168.0" text="Contacto  Movel" underline="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textField_contactMovForn" layoutX="353.0" layoutY="192.0" onKeyReleased="#tfContactoKeyRelased" onMouseEntered="#getContactSpace" prefHeight="28.0" prefWidth="244.0" promptText="Contacto Movel" AnchorPane.leftAnchor="353.0" AnchorPane.rightAnchor="529.0">
+                           <font>
+                              <Font name="Century Gothic" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="textField_enderecForn" layoutX="36.0" layoutY="192.0" prefHeight="28.0" prefWidth="244.0" promptText="O endereço">
+                           <font>
+                              <Font name="Century Gothic" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Pane layoutX="667.0" layoutY="191.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" AnchorPane.rightAnchor="434.0" />
+                        <Label layoutX="667.0" layoutY="167.0" text="Contacto Fixo" underline="true" AnchorPane.rightAnchor="381.0">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textField_contactFix_forn" layoutX="692.0" layoutY="191.0" prefHeight="28.0" prefWidth="244.0" promptText="Contacto Fixo" AnchorPane.rightAnchor="190.0">
+                           <font>
+                              <Font name="Century Gothic" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="16.0" layoutY="236.0" text="E-mail" underline="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="13.0" layoutY="261.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" />
+                        <Pane layoutX="328.0" layoutY="261.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" AnchorPane.leftAnchor="328.0" />
+                        <Label layoutX="330.0" layoutY="237.0" text="Nº Fical" underline="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textField_nif_forn" layoutX="355.0" layoutY="261.0" prefHeight="28.0" prefWidth="244.0" promptText="Insira o NIF" AnchorPane.leftAnchor="353.0" AnchorPane.rightAnchor="529.0">
+                           <font>
+                              <Font name="Century Gothic" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="textField_email_Forn" layoutX="38.0" layoutY="261.0" prefHeight="28.0" prefWidth="244.0" promptText="email">
+                           <font>
+                              <Font name="Century Gothic" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="975.0" layoutY="197.0" text="Activar" AnchorPane.rightAnchor="107.0">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="306.0" text="Crédito" underline="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="11.0" layoutY="331.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" />
+                        <Pane layoutX="328.0" layoutY="331.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" AnchorPane.leftAnchor="328.0" />
+                        <Label layoutX="328.0" layoutY="307.0" text="Extorno" underline="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textField_extorno" alignment="CENTER_RIGHT" layoutX="353.0" layoutY="331.0" onMouseClicked="#setValor_naoCorrete" onMouseExited="#setValorCorrete" onMouseReleased="#setValorCorrete" prefHeight="28.0" prefWidth="244.0" promptText="valor a extornar" AnchorPane.leftAnchor="353.0" AnchorPane.rightAnchor="529.0">
+                           <font>
+                              <Font name="Century Gothic" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="textField_credit_forn" alignment="CENTER_RIGHT" layoutX="36.0" layoutY="331.0" onMouseClicked="#setValor_naoCorrete" onMouseExited="#setValorCorrete" onMouseReleased="#setValorCorrete" prefHeight="28.0" prefWidth="244.0" promptText="crédito">
+                           <font>
+                              <Font name="Century Gothic" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="btn_novo_forn" layoutX="20.0" layoutY="11.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#cadastra_forn" prefHeight="32.0" prefWidth="125.0" text="Novo" textFill="#464545">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" translateX="-18.0">
+                                 <Image url="@../../../../img_config/Plus_48px.png" />
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btn_Consult_forn" layoutX="813.0" layoutY="10.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="146.0" text="Consultar Cli." textFill="#464545" AnchorPane.rightAnchor="169.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="27.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" translateX="-11.0">
+
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="6.0" right="-3.0" />
+                           </padding>
+                        </Button>
+                     </AnchorPane>
+                  </AnchorPane>
+               </Tab>
+               <Tab text="Acessórios">
+                  <AnchorPane minHeight="0.0" minWidth="0.0">
+                     <AnchorPane fx:id="painel_clinte11" layoutX="7.0" layoutY="12.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5px;" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="12.0">
+                        <AnchorPane layoutX="11.0" layoutY="56.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="947.0" style="-fx-border-color: #E39B9D; -fx-border-width: 1px; -fx-border-radius: 6px;" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="168.0">
+                           <Label layoutX="1.0" layoutY="14.0" prefHeight="35.0" prefWidth="947.0" style="-fx-background-color: #E39B9D; -fx-background-radius: 5px 5px 0px 0px;" text="  Acessórios." textFill="#392f2d" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <font>
+                                 <Font name="System Bold" size="15.0" />
+                              </font>
+                           </Label>
+                           <Pane layoutX="10.0" layoutY="53.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" />
+                           <Pane layoutX="677.0" layoutY="54.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" AnchorPane.rightAnchor="249.0" />
+                           <Pane layoutX="322.0" layoutY="53.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" AnchorPane.leftAnchor="322.0" />
+                           <TextField fx:id="textField_codAcess" editable="false" layoutX="35.0" layoutY="53.0" prefHeight="28.0" prefWidth="89.0" promptText="codigo" style="-fx-background-color: #CAC6C6;">
+                              <font>
+                                 <Font name="Century Gothic" size="14.0" />
+                              </font>
+                           </TextField>
+                           <ComboBox fx:id="combobox_categ_acess" editable="true" layoutX="350.0" layoutY="53.0" onAction="#chamar_ComboboxSerieCadastro" prefHeight="28.0" prefWidth="178.0" promptText="Categoría" AnchorPane.rightAnchor="425.0" />
+                           <ComboBox fx:id="combobox_SerieAcess" editable="true" layoutX="701.0" layoutY="54.0" onAction="#carregar_Identificador" prefHeight="28.0" prefWidth="181.0" promptText="Serie do acessório" />
+                        </AnchorPane>
+                        <TableView fx:id="tableView_Acess" layoutX="3.0" layoutY="376.0" onMouseClicked="#selectTable_Acess" prefHeight="226.0" prefWidth="1116.0" styleClass="tabela_listar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="376.0" />
+                        <TextArea fx:id="textA_descriçãoAcess" layoutX="654.0" layoutY="247.0" prefHeight="119.0" prefWidth="446.0" promptText="Descrição / Acessório" AnchorPane.rightAnchor="30.0">
+                           <font>
+                              <Font name="Century Gothic" size="13.0" />
+                           </font>
+                        </TextArea>
+                        <Label layoutX="14.0" layoutY="167.0" text="Nome_acessórios" underline="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btn_guardar_acess" layoutX="214.0" layoutY="11.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Btns_Acessorios" prefHeight="35.0" prefWidth="124.0" text="Guardar" textFill="#464545">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" translateX="-12.0">
+                                 <Image url="@../../../../img_config/Save_32px.png" />
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btn_actualizar_acess" layoutX="415.0" layoutY="11.0" mnemonicParsing="false" onAction="#Btns_Acessorios" prefHeight="32.0" prefWidth="125.0" text="Actualizar" textFill="#464545" AnchorPane.leftAnchor="415.0" AnchorPane.rightAnchor="586.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" translateX="-6.0">
+
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btn_eliminar_acess" layoutX="619.0" layoutY="10.0" mnemonicParsing="false" onAction="#Btns_Acessorios" prefHeight="32.0" prefWidth="125.0" text="Eliminar" textFill="#464545" AnchorPane.rightAnchor="384.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="27.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" translateX="-11.0">
+                                 <Image url="@../../../../img_config/Delete_32px.png" />
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Label fx:id="Label_foto_forn1" alignment="CENTER" contentDisplay="CENTER" layoutX="975.0" layoutY="14.0" maxHeight="143.0" maxWidth="136.0" minHeight="143.0" minWidth="136.0" onMouseClicked="#carregar_foto_Acessorio" prefHeight="143.0" prefWidth="136.0" style="-fx-background-color: #FFFFFF; -fx-border-width: 3px; -fx-border-color: #E39B9D;" AnchorPane.rightAnchor="15.0">
+                           <graphic>
+                              <ImageView fx:id="imageView_cadaAcess" fitHeight="135.0" fitWidth="125.7" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                        <Pane layoutX="11.0" layoutY="192.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" />
+                        <Pane layoutX="328.0" layoutY="192.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" AnchorPane.leftAnchor="328.0" />
+                        <Label layoutX="328.0" layoutY="168.0" text="Fornecedor" underline="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textField_FornecAcess" layoutX="353.0" layoutY="192.0" prefHeight="28.0" prefWidth="244.0" promptText="Nome Fornecedor" AnchorPane.leftAnchor="353.0" AnchorPane.rightAnchor="529.0">
+                           <font>
+                              <Font name="Century Gothic" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="textField_nomeAcess" layoutX="36.0" layoutY="192.0" prefHeight="28.0" prefWidth="244.0" promptText="Nome do Acessório">
+                           <font>
+                              <Font name="Century Gothic" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Pane layoutX="663.0" layoutY="194.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" AnchorPane.rightAnchor="442.0" />
+                        <Label layoutX="701.0" layoutY="168.0" prefHeight="17.0" prefWidth="35.0" text="Loja" underline="true" AnchorPane.rightAnchor="405.0">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textField_codBarraAcess" layoutX="688.0" layoutY="194.0" prefHeight="28.0" prefWidth="244.0" promptText="Loja" AnchorPane.rightAnchor="198.0">
+                           <font>
+                              <Font name="Century Gothic" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="16.0" layoutY="236.0" text="Cod. dentificador" underline="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Pane disable="true" layoutX="13.0" layoutY="261.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" />
+                        <Pane disable="true" layoutX="328.0" layoutY="261.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" AnchorPane.leftAnchor="328.0" />
+                        <Label layoutX="330.0" layoutY="237.0" text="Compatibilidade" underline="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="975.0" layoutY="197.0" text="Activar" AnchorPane.rightAnchor="107.0">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="306.0" text="Preço / Compra" underline="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="11.0" layoutY="331.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" />
+                        <Pane layoutX="328.0" layoutY="331.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" AnchorPane.leftAnchor="328.0" />
+                        <Label layoutX="328.0" layoutY="307.0" text="Preço Unitário" underline="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textField_precVendaAcess" alignment="CENTER_RIGHT" layoutX="353.0" layoutY="331.0" onMouseClicked="#setValor_naoCorrete" onMouseExited="#setValorCorrete" onMouseReleased="#setValorCorrete" prefHeight="28.0" prefWidth="244.0" promptText="v_unit." AnchorPane.leftAnchor="353.0" AnchorPane.rightAnchor="529.0">
+                           <font>
+                              <Font name="Century Gothic" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="textField_precCompraAcess" alignment="CENTER_RIGHT" layoutX="36.0" layoutY="331.0" onMouseClicked="#setValor_naoCorrete" onMouseExited="#setValorCorrete" onMouseReleased="#setValorCorrete" prefHeight="28.0" prefWidth="244.0" promptText="v_compra">
+                           <font>
+                              <Font name="Century Gothic" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="btn_novo_acess" layoutX="20.0" layoutY="11.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#Btns_Acessorios" prefHeight="32.0" prefWidth="125.0" text="Novo" textFill="#464545">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" translateX="-18.0">
+                                 <Image url="@../../../../img_config/Plus_48px.png" />
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btn_Consult_acess" layoutX="813.0" layoutY="10.0" mnemonicParsing="false" onAction="#Btns_Acessorios" prefHeight="37.0" prefWidth="146.0" text="Consultar Cli." textFill="#464545" AnchorPane.rightAnchor="169.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="27.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" translateX="-11.0">
+
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="6.0" right="-3.0" />
+                           </padding>
+                        </Button>
+                        <ComboBox fx:id="combobox_IdentifcadorAcess" editable="true" layoutX="38.0" layoutY="261.0" prefHeight="28.0" prefWidth="240.0" promptText="Identifcador" />
+                        <ComboBox fx:id="combobox_Identifcador1" disable="true" editable="true" layoutX="353.0" layoutY="261.0" prefHeight="28.0" prefWidth="245.0" promptText="O nome do fornecedor" />
+                     </AnchorPane>
+                  </AnchorPane>
+               </Tab>
+               <Tab text="Serviços">
+                  <AnchorPane minHeight="0.0" minWidth="0.0" />
+               </Tab>
+               <Tab text="Dependéncias">
+                  <AnchorPane minHeight="0.0" minWidth="0.0" />
+               </Tab>
+               <Tab text="Usuário">
+                  <AnchorPane minHeight="0.0" minWidth="0.0">
+                     <AnchorPane fx:id="painel_user" layoutX="7.0" layoutY="12.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5px;" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="14.0">
+                        <AnchorPane layoutX="11.0" layoutY="56.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="947.0" style="-fx-border-color: #834A3D; -fx-border-width: 1px; -fx-border-radius: 6px;" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="168.0">
+                           <Label layoutX="1.0" layoutY="14.0" prefHeight="35.0" prefWidth="947.0" style="-fx-background-color: #834A3D; -fx-background-radius: 5px 5px 0px 0px;" text="  Usuário." textFill="#2c1612" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <font>
+                                 <Font name="System Bold" size="15.0" />
+                              </font>
+                           </Label>
+                           <TextField fx:id="textField_nomeUser" layoutX="343.0" layoutY="53.0" prefHeight="28.0" prefWidth="244.0" promptText="nome completo" AnchorPane.leftAnchor="342.0" AnchorPane.rightAnchor="360.0">
+                              <font>
+                                 <Font name="Century Gothic" size="14.0" />
+                              </font>
+                           </TextField>
+                           <Pane layoutX="10.0" layoutY="53.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" />
+                           <Pane layoutX="687.0" layoutY="54.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" AnchorPane.rightAnchor="235.0" />
+                           <Pane layoutX="318.0" layoutY="53.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" AnchorPane.leftAnchor="317.0" />
+                           <TextField fx:id="textField_codUser" editable="false" layoutX="35.0" layoutY="53.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="28.0" prefWidth="70.0" promptText="codigo" style="-fx-background-color: #CAC6C6;">
+                              <font>
+                                 <Font name="Century Gothic" size="14.0" />
+                              </font>
+                           </TextField>
+                           <ComboBox fx:id="combobox_PrioridadeUser" editable="true" layoutX="712.0" layoutY="54.0" onAction="#combobox_prioridade" prefHeight="28.0" prefWidth="162.0" promptText="Perioridade" AnchorPane.rightAnchor="73.0" />
+                        </AnchorPane>
+                        <TableView fx:id="tableView_User" layoutX="3.0" layoutY="376.0" onMouseClicked="#selectTable_User" prefHeight="226.0" prefWidth="1116.0" styleClass="tabela_listar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="376.0" />
+                        <TextArea fx:id="textA_descriçãoUser" layoutX="665.0" layoutY="240.0" prefHeight="119.0" prefWidth="446.0" promptText="Descrição / Usuario:" AnchorPane.rightAnchor="15.0">
+                           <font>
+                              <Font name="Century Gothic" size="13.0" />
+                           </font>
+                        </TextArea>
+                        <Label layoutX="14.0" layoutY="167.0" text="UserID" underline="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btn_guardar_User" layoutX="208.0" layoutY="11.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Btns_Usuarios" prefHeight="35.0" prefWidth="124.0" text="Guardar" textFill="#464545">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" translateX="-12.0">
+                                 <Image url="@../../../../img_config/Save_32px.png" />
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btn_actualizar_User" layoutX="415.0" layoutY="11.0" mnemonicParsing="false" onAction="#Btns_Usuarios" prefHeight="32.0" prefWidth="125.0" text="Actualizar" textFill="#464545" AnchorPane.leftAnchor="415.0" AnchorPane.rightAnchor="586.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" translateX="-6.0">
+
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btn_eliminar_User" layoutX="618.0" layoutY="10.0" mnemonicParsing="false" onAction="#Btns_Usuarios" prefHeight="32.0" prefWidth="125.0" text="Eliminar" textFill="#464545" AnchorPane.rightAnchor="385.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="27.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" translateX="-11.0">
+                                 <Image url="@../../../../img_config/Delete_32px.png" />
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Label fx:id="Label_fotoUser" alignment="CENTER" contentDisplay="CENTER" layoutX="975.0" layoutY="14.0" maxHeight="143.0" maxWidth="136.0" minHeight="143.0" minWidth="136.0" onMouseClicked="#carregar_foto_Usuario" prefHeight="143.0" prefWidth="136.0" style="-fx-background-color: #FFFFFF; -fx-border-width: 3px; -fx-border-color: #834A3D;" AnchorPane.rightAnchor="15.0">
+                           <graphic>
+                              <ImageView fx:id="imageView_cad_User" fitHeight="135.0" fitWidth="125.7" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                        <Pane layoutX="11.0" layoutY="192.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" />
+                        <Pane layoutX="328.0" layoutY="192.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" AnchorPane.leftAnchor="328.0" />
+                        <Label layoutX="328.0" layoutY="168.0" text="Contacto  Movel" underline="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textField_contactMovUser" layoutX="353.0" layoutY="192.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#getContactSpace" prefHeight="28.0" prefWidth="244.0" AnchorPane.leftAnchor="353.0" AnchorPane.rightAnchor="529.0">
+                           <font>
+                              <Font name="Century Gothic" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="textField_UserId" layoutX="36.0" layoutY="192.0" prefHeight="28.0" prefWidth="244.0" promptText="User_name">
+                           <font>
+                              <Font name="Century Gothic" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="667.0" layoutY="167.0" text="Loja a Operar" underline="true" AnchorPane.rightAnchor="381.0">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="16.0" layoutY="236.0" text="E-mail" underline="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="13.0" layoutY="261.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" />
+                        <Pane layoutX="328.0" layoutY="261.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" AnchorPane.leftAnchor="328.0" />
+                        <Label layoutX="330.0" layoutY="237.0" text="Função" underline="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textField_emailUser" layoutX="38.0" layoutY="261.0" prefHeight="28.0" prefWidth="244.0" promptText="email">
+                           <font>
+                              <Font name="Century Gothic" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="975.0" layoutY="197.0" text="Activar" AnchorPane.rightAnchor="107.0">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="306.0" text="Senha" underline="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="11.0" layoutY="331.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" />
+                        <Pane layoutX="328.0" layoutY="331.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" AnchorPane.leftAnchor="328.0" />
+                        <Label layoutX="328.0" layoutY="307.0" text="Repita a Senha" underline="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btn_novo_User" layoutX="18.0" layoutY="11.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#Btns_Usuarios" prefHeight="32.0" prefWidth="125.0" text="Novo" textFill="#464545">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" translateX="-18.0">
+                                 <Image url="@../../../../img_config/Plus_48px.png" />
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btn_Consult_User" graphicTextGap="1.0" layoutX="813.0" layoutY="10.0" mnemonicParsing="false" onAction="#Btns_Usuarios" prefHeight="37.0" prefWidth="146.0" text="Consultar Cli." textFill="#464545" AnchorPane.rightAnchor="169.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="27.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" translateX="-11.0">
+
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="6.0" right="-3.0" />
+                           </padding>
+                        </Button>
+                        <ComboBox fx:id="combobox_funcao_user" editable="true" layoutX="353.0" layoutY="261.0" prefHeight="28.0" prefWidth="245.0" promptText="funcao" />
+                        <PasswordField fx:id="passwordField_user" layoutX="36.0" layoutY="331.0" prefHeight="28.0" prefWidth="244.0" />
+                        <PasswordField fx:id="passwordFieldRepita_user" layoutX="353.0" layoutY="331.0" prefHeight="28.0" prefWidth="244.0" />
+                        <ComboBox fx:id="combobox_loja_a_operar" editable="true" layoutX="692.0" layoutY="192.0" prefHeight="28.0" prefWidth="244.0" />
+                        <Pane layoutX="667.0" layoutY="192.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" />
+                     </AnchorPane>
+                  </AnchorPane>
+               </Tab>
+               <Tab text="Config.">
+                  <AnchorPane minHeight="0.0" minWidth="0.0">
+                     <AnchorPane fx:id="painel_clinte111" layoutX="14.0" layoutY="29.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5px;" AnchorPane.bottomAnchor="-19.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="29.0">
+                        <AnchorPane layoutX="11.0" layoutY="56.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="947.0" style="-fx-border-color: #CAC6C6; -fx-border-width: 1px; -fx-border-radius: 4px;" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="168.0">
+                           <Label layoutX="1.0" layoutY="14.0" prefHeight="35.0" prefWidth="947.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 5px 5px 0px 0px;" text="  Configurações:" textFill="#392f2d" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <font>
+                                 <Font name="System Bold" size="15.0" />
+                              </font>
+                           </Label>
+                           <Pane layoutX="10.0" layoutY="53.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" />
+                           <Pane layoutX="677.0" layoutY="54.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" AnchorPane.rightAnchor="245.0" />
+                           <Pane layoutX="322.0" layoutY="53.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" AnchorPane.leftAnchor="322.0" />
+                           <TextField fx:id="textField_codAcess1" editable="false" layoutX="35.0" layoutY="53.0" prefHeight="28.0" prefWidth="89.0" promptText="codigo" style="-fx-background-color: #CAC6C6;">
+                              <font>
+                                 <Font name="Century Gothic" size="14.0" />
+                              </font>
+                           </TextField>
+                           <ComboBox fx:id="combobox_categ_acess1" editable="true" layoutX="350.0" layoutY="53.0" prefHeight="28.0" prefWidth="178.0" promptText="Categoría" AnchorPane.rightAnchor="425.0" />
+                           <ComboBox fx:id="combobox_tipo_acess1" editable="true" layoutX="701.0" layoutY="54.0" prefHeight="28.0" prefWidth="181.0" promptText="tipo do acessório" />
+                        </AnchorPane>
+                        <Button fx:id="btn_guardar_acess1" layoutX="214.0" layoutY="11.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#cadastra_forn" prefHeight="35.0" prefWidth="124.0" text="Guardar" textFill="#464545">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" translateX="-12.0">
+                                 <Image url="@../../../../img_config/Save_32px.png" />
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btn_actualizar_acess1" layoutX="415.0" layoutY="11.0" mnemonicParsing="false" onAction="#actualizar_cadast_for" prefHeight="32.0" prefWidth="125.0" text="Actualizar" textFill="#464545" AnchorPane.leftAnchor="415.0" AnchorPane.rightAnchor="586.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" translateX="-6.0">
+
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btn_eliminar_acess1" layoutX="619.0" layoutY="10.0" mnemonicParsing="false" onAction="#cadastra_forn" prefHeight="32.0" prefWidth="125.0" text="Eliminar" textFill="#464545" AnchorPane.rightAnchor="384.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="27.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" translateX="-11.0">
+                                 <Image url="@../../../../img_config/Delete_32px.png" />
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Label fx:id="Label_foto_forn11" alignment="CENTER" contentDisplay="CENTER" layoutX="975.0" layoutY="14.0" maxHeight="143.0" maxWidth="136.0" minHeight="143.0" minWidth="136.0" onMouseClicked="#carregar_foto_Forn" prefHeight="143.0" prefWidth="136.0" style="-fx-background-color: #FFFFFF; -fx-border-width: 3px; -fx-border-color: #CAC6C6;" AnchorPane.rightAnchor="15.0">
+                           <graphic>
+                              <ImageView fx:id="imageView_cad_forn11" fitHeight="135.0" fitWidth="125.7" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                        <Label layoutX="328.0" layoutY="168.0" text="Codigo:" underline="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btn_novo_acess1" layoutX="20.0" layoutY="11.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#cadastra_forn" prefHeight="32.0" prefWidth="125.0" text="Novo" textFill="#464545">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" translateX="-18.0">
+                                 <Image url="@../../../../img_config/Plus_48px.png" />
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btn_Consult_acess1" layoutX="813.0" layoutY="10.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="146.0" text="Consultar Cli." textFill="#464545" AnchorPane.rightAnchor="169.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="27.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" translateX="-11.0">
+
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="6.0" right="-3.0" />
+                           </padding>
+                        </Button>
+                        <Separator layoutX="307.0" layoutY="168.0" orientation="VERTICAL" prefHeight="375.0" prefWidth="6.0" />
+                        <CheckListView editable="true" layoutX="323.0" layoutY="202.0" prefHeight="107.0" prefWidth="248.0" />
+                        <CheckListView layoutX="323.0" layoutY="436.0" prefHeight="107.0" prefWidth="248.0" />
+                        <CheckListView layoutX="323.0" layoutY="319.0" prefHeight="107.0" prefWidth="248.0" />
+                     </AnchorPane>
+                  </AnchorPane>
+               </Tab>
+            </TabPane>
+         </AnchorPane>
+         <AnchorPane id="AnchorPane" fx:id="Painel_OrdemServico" maxHeight="-Infinity" prefWidth="1145.0" style="-fx-background-color: #DFEDFD;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-1.0">
+            <AnchorPane fx:id="Painel_Imprimir_OS" layoutX="9.0" layoutY="54.0" prefHeight="601.0" prefWidth="1127.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5px;" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="54.0">
+               <AnchorPane layoutX="13.0" layoutY="67.0" minWidth="-Infinity" prefHeight="100.0" prefWidth="1100.0" style="-fx-border-color: #85BC81; -fx-border-width: 1px; -fx-border-radius: 4px;" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="14.0">
+                  <Label layoutX="1.0" layoutY="1.0" prefHeight="35.0" prefWidth="959.0" style="-fx-background-color: #D2E6D0; -fx-background-radius: 5px 5px 0px 0px;" text=" Ordem de Serviço #" textFill="#425140" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Label_NomeTipo" alignment="CENTER" layoutX="45.0" layoutY="54.0" prefHeight="28.0" prefWidth="135.0" style="-fx-background-color: #555555; -fx-background-radius: 3px;" text="Impressora" textFill="WHITE" AnchorPane.leftAnchor="45.0">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Lbl_descric_Item_Impri" alignment="CENTER" layoutX="402.0" layoutY="54.0" prefHeight="28.0" prefWidth="289.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #363333; -fx-border-width: 1px; -fx-border-radius: 3px;" text="HP Officejet 8500A Plus" AnchorPane.leftAnchor="402.0" AnchorPane.rightAnchor="415.0">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Lbl_nomeCliente_Impr" alignment="CENTER" layoutX="825.0" layoutY="54.0" prefHeight="27.0" prefWidth="285.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #363333; -fx-border-width: 1; -fx-border-radius: 3px;" text=" Cliente Diverso" AnchorPane.rightAnchor="16.0">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Lbl_DataImpr" alignment="CENTER_RIGHT" layoutX="807.0" layoutY="-35.0" prefHeight="28.0" prefWidth="287.0" text="Seg. feira 02 Janeiro de 2022" textAlignment="RIGHT">
+                     <font>
+                        <Font name="Century Gothic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Lbl_NumOrdemServic" layoutX="148.0" layoutY="5.0" prefHeight="28.0" prefWidth="102.0" text="000" textAlignment="RIGHT">
+                     <font>
+                        <Font name="Century Gothic Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </AnchorPane>
+               <Pane layoutX="22.0" layoutY="222.0" prefHeight="28.0" prefWidth="33.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" />
+               <Pane layoutX="22.0" layoutY="270.0" prefHeight="28.0" prefWidth="33.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" />
+               <AnchorPane layoutY="307.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="287.0" prefWidth="1111.0" style="-fx-border-color: #B4BBBC; -fx-border-width: 1px; -fx-border-radius: 4px;" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="18.0">
+                  <Label layoutX="1.0" layoutY="1.0" prefHeight="41.0" prefWidth="152.0" text="    Pesas e Serviços" textFill="#384037">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="69.0" layoutY="46.0" prefHeight="21.0" prefWidth="48.0" text="QUANT">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="11.0" layoutY="40.0" prefHeight="3.0" prefWidth="1082.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="7.0" />
+                  <Label layoutX="329.0" layoutY="46.0" prefHeight="21.0" prefWidth="67.0" text="DESCRIÇÃO">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="574.0" layoutY="46.0" prefHeight="21.0" prefWidth="39.0" text="COD.">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="924.0" layoutY="46.0" prefHeight="21.0" prefWidth="58.0" text="TOTAL">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <ScrollPane fx:id="scrollPane" layoutX="14.0" layoutY="70.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="188.0" prefWidth="1078.0" style="-fx-border-color: #FFFFFF;" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="11.0">
+                     <GridPane fx:id="GridPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="0.0" prefWidth="3.0">
+                        <columnConstraints>
+                           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        </columnConstraints>
+                        <padding>
+                           <Insets top="-2.0" />
+                        </padding>
+                     </GridPane>
+                  </ScrollPane>
+                  <Label layoutX="766.0" layoutY="46.0" prefHeight="21.0" prefWidth="41.0" text="UNIT.">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="662.0" layoutY="45.0" prefHeight="21.0" prefWidth="41.0" text="PAG.">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="TextFieldl_MontanteItens" alignment="CENTER_RIGHT" editable="false" layoutX="866.0" layoutY="260.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="156.0" style="-fx-background-color: #C0B8B6; -fx-border-insets: 1px; -fx-border-color: #B4BBBC;" text="5.000,00">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="816.0" layoutY="256.0" prefHeight="30.0" prefWidth="54.0" text="Total: " textFill="#384037">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Lbl_statusPamento" alignment="CENTER_RIGHT" layoutX="306.0" layoutY="262.0" prefHeight="23.0" prefWidth="91.0" text="V. Por Pagar:" textFill="#384037">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Lbl_ValorPorPagar" alignment="CENTER_RIGHT" layoutX="397.0" layoutY="262.0" prefHeight="23.0" prefWidth="66.0" text="0" textFill="#384037">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Lbl_statusPamento1" alignment="CENTER_RIGHT" layoutX="156.0" layoutY="262.0" prefHeight="23.0" prefWidth="71.0" text="Valor Pago:" textFill="#384037">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Lbl_vPago" alignment="CENTER_RIGHT" layoutX="228.0" layoutY="262.0" prefHeight="23.0" prefWidth="57.0" text="0" textFill="#384037">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="287.0" layoutY="259.0" orientation="VERTICAL" prefHeight="24.0" prefWidth="7.0" />
+                  <Label fx:id="Lbl_statusPamento11" alignment="CENTER_RIGHT" layoutX="21.0" layoutY="261.0" prefHeight="23.0" prefWidth="80.0" text="Qnt. Item:" textFill="#384037">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Lbl_status11" alignment="CENTER_RIGHT" layoutX="102.0" layoutY="264.0" prefHeight="16.0" prefWidth="32.0" text="0" textFill="#384037">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="135.0" layoutY="259.0" orientation="VERTICAL" prefHeight="24.0" prefWidth="7.0" />
+                  <Separator layoutX="468.0" layoutY="259.0" orientation="VERTICAL" prefHeight="24.0" prefWidth="7.0" />
+               </AnchorPane>
+               <TextField layoutX="55.0" layoutY="222.0" prefHeight="28.0" prefWidth="228.0" promptText="Local de Execução" />
+               <TextField layoutX="55.0" layoutY="270.0" prefHeight="28.0" prefWidth="228.0" promptText="Técnico a Reparar" />
+               <TextArea layoutX="739.0" layoutY="224.0" prefHeight="74.0" prefWidth="388.0" promptText="Dignóstico" AnchorPane.rightAnchor="17.0" />
+               <Separator layoutX="460.0" layoutY="260.0" prefHeight="2.0" prefWidth="259.0" AnchorPane.rightAnchor="410.0" />
+               <Separator layoutX="588.0" layoutY="225.0" orientation="VERTICAL" prefHeight="72.0" prefWidth="2.0" AnchorPane.rightAnchor="536.0" />
+               <Separator layoutX="17.0" layoutY="258.0" prefHeight="4.0" prefWidth="265.0" />
+               <Label layoutX="741.0" layoutY="194.0" prefHeight="30.0" prefWidth="117.0" text="Status Serviço: " textFill="#384037" AnchorPane.rightAnchor="285.0">
+                  <font>
+                     <Font name="System Bold" size="16.0" />
+                  </font>
+               </Label>
+               <TextField fx:id="Textfield_Status_SO" alignment="CENTER" layoutX="855.0" layoutY="195.0" minHeight="-Infinity" prefHeight="24.0" prefWidth="185.0" promptText="Andamento do Serviço" style="-fx-background-color: #EBEBEB; -fx-border-width: 1px; -fx-border-color: #615554; -fx-border-radius: 4px;" styleClass="textField_impri" AnchorPane.rightAnchor="103.0">
+                  <font>
+                     <Font name="System Bold" size="14.0" />
+                  </font>
+               </TextField>
+               <Button fx:id="Btn_RegistarPgmt" layoutX="594.0" layoutY="225.0" mnemonicParsing="false" onAction="#abilitarBtnOS" prefHeight="31.0" prefWidth="124.0" styleClass="Btn_RegistarPgmt" text="REGISTAR PGMT." textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </Button>
+               <Button fx:id="Btn_DedTroco" layoutX="459.0" layoutY="225.0" mnemonicParsing="false" onAction="#ChamarTelaCobrar" prefHeight="31.0" prefWidth="124.0" text="DED. TROGO" textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+                  <styleClass>
+                     <String fx:value="btn_Ded_impri" />
+                     <String fx:value="btn_Ded_impri" />
+                  </styleClass>
+               </Button>
+               <Button fx:id="Btn_Consut" layoutX="459.0" layoutY="265.0" mnemonicParsing="false" onAction="#abilitarBtnOS" prefHeight="31.0" prefWidth="124.0" styleClass="Btn_Consut" text="CONSULTAR OS" textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </Button>
+               <Button fx:id="Btn_Consut1" layoutX="593.0" layoutY="265.0" mnemonicParsing="false" onAction="#abilitarBtnOS" prefHeight="31.0" prefWidth="124.0" styleClass="Btn_Finalizar" text="FINALIZAR OS" textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </Button>
+            </AnchorPane>
+            <AnchorPane fx:id="painel_NovaOrdem" layoutX="8.0" layoutY="56.0" prefHeight="602.0" prefWidth="1125.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5px;" visible="false" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="56.0">
+               <AnchorPane layoutX="14.0" layoutY="70.0" minWidth="-Infinity" prefHeight="100.0" prefWidth="1100.0" style="-fx-border-color: #85BC81; -fx-border-width: 1px; -fx-border-radius: 4px;" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="11.0">
+                  <Label layoutX="1.0" layoutY="1.0" prefHeight="35.0" prefWidth="1096.0" style="-fx-background-color: #D2E6D0; -fx-background-radius: 5px 5px 0px 0px;" text="  ORDEM SERVIÇO:" textFill="#425140" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Century Gothic Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="29.0" layoutY="55.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" />
+                  <ComboBox fx:id="combobox_categoria_servic" layoutX="54.0" layoutY="55.0" onAction="#Selecionar_Image_CatListar" prefHeight="28.0" prefWidth="149.0" promptText="Selecione Categoria" />
+                  <TextField fx:id="textFild_ref_equipamento" layoutX="525.0" layoutY="56.0" prefHeight="28.0" prefWidth="210.0" promptText="Referencia do Equipamento" AnchorPane.rightAnchor="352.0">
+                     <font>
+                        <Font name="Century Gothic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="textFild_cliente" layoutX="841.0" layoutY="54.0" prefHeight="28.0" prefWidth="218.0" promptText="o cliente" AnchorPane.rightAnchor="43.0">
+                     <font>
+                        <Font name="Century Gothic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <Pane layoutX="260.0" layoutY="56.0" prefHeight="28.0" prefWidth="30.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" />
+                  <ComboBox fx:id="combobox_serie" layoutX="290.0" layoutY="56.0" onAction="#chamar_Combobox_Servicos" prefHeight="28.0" prefWidth="199.0" promptText="Selecione a Serie" AnchorPane.leftAnchor="289.0" AnchorPane.rightAnchor="614.0" />
+                  <Button fx:id="btn_ChamarCliente" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="803.0" layoutY="54.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ChamarTelaCliente" prefHeight="27.0" prefWidth="39.0" style="-fx-background-color: #D5D5D5;" textFill="#575454" textOverrun="CENTER_WORD_ELLIPSIS" AnchorPane.rightAnchor="260.0">
+                     <graphic>
+
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label fx:id="Lbl_codNovaOrdem" layoutX="122.0" layoutY="9.0" prefHeight="19.0" prefWidth="30.0" text="0" textFill="#425140">
+                     <font>
+                        <Font name="Century Gothic Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </AnchorPane>
+               <Pane layoutX="21.0" layoutY="201.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" />
+               <ComboBox fx:id="combobox_servic" editable="true" layoutX="46.0" layoutY="201.0" onAction="#Chamar_PrecoUnitServ" prefHeight="28.0" prefWidth="208.0" promptText="Selecione o tipo de Serviço" />
+               <Pane layoutX="665.0" layoutY="199.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" AnchorPane.rightAnchor="435.0" />
+               <ComboBox fx:id="combobox_local_exec" editable="true" layoutX="689.0" layoutY="199.0" prefHeight="28.0" prefWidth="162.0" promptText="Local de Execução" AnchorPane.rightAnchor="274.0" />
+               <TableView fx:id="tableview_nova_SO" layoutX="9.0" layoutY="376.0" prefHeight="231.0" prefWidth="1107.0" styleClass="tabela_listar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="376.0" />
+               <Pane layoutX="355.0" layoutY="201.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" />
+               <ComboBox fx:id="combobox_acessorios" editable="true" layoutX="380.0" layoutY="201.0" onAction="#Chamar_PrecoUnitAcess" prefHeight="28.0" prefWidth="212.0" promptText="Acessórios" AnchorPane.leftAnchor="380.0" AnchorPane.rightAnchor="533.0" />
+               <Button fx:id="btn_inserir_servico" alignment="CENTER" layoutX="18.0" layoutY="328.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#enserirServicos" prefHeight="30.0" prefWidth="235.0" style="-fx-background-color: #424D3E;" text="    Inserir" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
+                  <font>
+                     <Font name="System Bold" size="16.0" />
+                  </font>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </Button>
+               <TextArea fx:id="textA_Relator_Queixa" layoutX="665.0" layoutY="240.0" prefHeight="119.0" prefWidth="446.0" promptText="Relato de Queixa:" AnchorPane.rightAnchor="14.0" />
+               <Spinner fx:id="Spinner_qnt_servic" layoutX="126.0" layoutY="290.0" prefHeight="25.0" prefWidth="126.0" />
+               <Separator layoutX="654.0" layoutY="174.0" orientation="VERTICAL" prefHeight="186.0" prefWidth="4.0" AnchorPane.rightAnchor="465.0" />
+               <Label layoutX="668.0" layoutY="174.0" text="Área Técnica" underline="true" AnchorPane.rightAnchor="385.0">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Label>
+               <Pane layoutX="924.0" layoutY="199.0" prefHeight="28.0" prefWidth="25.0" style="-fx-background-color: #CAC6C6; -fx-background-radius: 3px 0px 0px 3px;" AnchorPane.rightAnchor="176.0" />
+               <ComboBox fx:id="combobox_tecnico" editable="true" layoutX="949.0" layoutY="199.0" prefHeight="28.0" prefWidth="162.0" promptText="O técnico" AnchorPane.rightAnchor="14.0" />
+               <Separator layoutX="296.0" layoutY="174.0" orientation="VERTICAL" prefHeight="182.0" prefWidth="1.0" />
+               <Button fx:id="btn_inserir_acessorio" alignment="CENTER" layoutX="359.0" layoutY="328.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#enserirAcessorios" prefHeight="30.0" prefWidth="237.0" style="-fx-background-color: #424D3E;" text="    Inserir" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS" AnchorPane.leftAnchor="359.0" AnchorPane.rightAnchor="529.0">
+                  <graphic>
+
+                  </graphic>
+                  <font>
+                     <Font name="System Bold" size="16.0" />
+                  </font>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </Button>
+               <Spinner fx:id="Spinner_qnt_acessorio" layoutX="467.0" layoutY="290.0" prefHeight="25.0" prefWidth="126.0" AnchorPane.leftAnchor="467.0" AnchorPane.rightAnchor="532.0" />
+               <Label layoutX="342.0" layoutY="174.0" text="Venda de Acessórios" underline="true">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Label>
+               <Label layoutX="16.0" layoutY="174.0" text="Venda de Serviços" underline="true">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Label>
+               <Button fx:id="Btn_GuardaOS" layoutX="13.0" layoutY="19.0" mnemonicParsing="false" onAction="#Btn_ListaOrdem" prefHeight="25.0" prefWidth="111.0" styleClass="hover_btnpainel3" text="Guardar" textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="15.0" />
+                  </font>
+                  <graphic>
+
+                  </graphic>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </Button>
+               <TextField fx:id="textFild_precoUnit_serv" layoutX="20.0" layoutY="246.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="28.0" prefWidth="234.0" promptText="preço unit.">
+                  <font>
+                     <Font name="Century Gothic" size="14.0" />
+                  </font>
+               </TextField>
+               <TextField fx:id="textFild_precoUnit_acess" layoutX="353.0" layoutY="246.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="28.0" prefWidth="242.0" promptText="preço unit." AnchorPane.leftAnchor="353.0" AnchorPane.rightAnchor="530.0">
+                  <font>
+                     <Font name="Century Gothic" size="14.0" />
+                  </font>
+               </TextField>
+               <Label fx:id="Lbl_Data" alignment="CENTER_RIGHT" layoutX="789.0" layoutY="44.0" prefHeight="22.0" prefWidth="310.0" text="Data" textFill="#425140" AnchorPane.rightAnchor="28.0">
+                  <font>
+                     <Font name="Century Gothic" size="17.0" />
+                  </font>
+               </Label>
+            </AnchorPane>
+            <Button fx:id="Btn_nova_OS" layoutX="212.0" layoutY="15.0" mnemonicParsing="false" onAction="#abilitarBtnOS" prefHeight="25.0" prefWidth="140.0" text=" Nova O. S." AnchorPane.leftAnchor="215.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="Btn_editar_OS" layoutX="402.0" layoutY="15.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" text=" Editar O. S." AnchorPane.leftAnchor="407.0" AnchorPane.rightAnchor="600.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="Btn_consulta_OS" layoutX="596.0" layoutY="16.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" text=" Consultar" AnchorPane.rightAnchor="405.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="Btn_eliminar_OS" layoutX="793.0" layoutY="16.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" styleClass="hover_btnpainel2" text="  Eliminar" textFill="WHITE" AnchorPane.rightAnchor="210.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="987.0" layoutY="16.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" styleClass="hover_btnpainel3" text="  Cobrar" textFill="WHITE" AnchorPane.rightAnchor="18.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <SplitMenuButton fx:id="SplitBtnPainel_imprimir" layoutX="19.0" layoutY="15.0" mnemonicParsing="false" onAction="#abilitarBtnOS" prefHeight="31.0" prefWidth="144.0" style="-fx-background-color: #0C66C9;" text="Imprimir " textFill="#0c66c9" AnchorPane.leftAnchor="19.0">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="A4" />
+                  <MenuItem mnemonicParsing="false" text="POS">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="I" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+               </items>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+
+            </SplitMenuButton>
+         </AnchorPane>
+
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane fx:id="top" minHeight="-Infinity" onDragDetected="#makeStageDragable" onDragDone="#makeStageDragable" onDragEntered="#makeStageDragable" prefHeight="59.0" prefWidth="1365.0" style="-fx-background-color: #f4f4f4;" BorderPane.alignment="CENTER">
+         <effect>
+            <ColorAdjust />
+         </effect>
+         <Label contentDisplay="GRAPHIC_ONLY" layoutX="1197.0" layoutY="12.0" style="-fx-background-color: #3A3332;" text="Label" AnchorPane.rightAnchor="123.0">
+            <graphic>
+               <ImageView fx:id="image_view_actual" fitHeight="38.0" fitWidth="45.0" layoutY="22.0" pickOnBounds="true" y="10.0">
+
+                  <viewport>
+                     <Rectangle2D height="1.0" minY="12.0" />
+                  </viewport>
+               </ImageView>
+            </graphic>
+            <padding>
+               <Insets bottom="1.0" top="-2.0" />
+            </padding>
+         </Label>
+         <Circle fill="#1b7cd005" layoutX="1220.0" layoutY="29.0" radius="31.0" stroke="#f4f4f4" strokeType="INSIDE" strokeWidth="12.0" AnchorPane.rightAnchor="114.0" />
+         <Label contentDisplay="CENTER" layoutX="960.0" layoutY="12.0" text="5" textFill="#fff7f7" AnchorPane.rightAnchor="385.0">
+            <graphic>
+               <Circle fill="#0ba5bb" radius="10.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            </graphic>
+            <font>
+               <Font name="System Bold" size="15.0" />
+            </font>
+         </Label>
+         <Label contentDisplay="CENTER" layoutX="1039.0" layoutY="10.0" text="5" textFill="#fffdfd" AnchorPane.rightAnchor="306.0">
+            <font>
+               <Font name="System Bold" size="15.0" />
+            </font>
+            <graphic>
+               <Circle fill="#dd7979" radius="10.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            </graphic>
+         </Label>
+         <Label contentDisplay="CENTER" layoutX="1109.0" layoutY="9.0" text="5" textFill="#fffdfd" AnchorPane.rightAnchor="236.0">
+            <font>
+               <Font name="System Bold" size="15.0" />
+            </font>
+            <graphic>
+               <Circle fill="#7e7e14" radius="10.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            </graphic>
+         </Label>
+         <AnchorPane style="-fx-background-color: #18B7D5;">
+            <ImageView fitHeight="59.0" fitWidth="222.0" pickOnBounds="true" smooth="false">
+
+            </ImageView>
+         </AnchorPane>
+         <MenuButton id="btn_logout" fx:id="label_usuario_local" layoutX="1247.0" layoutY="16.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="107.0" styleClass="btn_logout" stylesheets="@../../../../styles/style.css" text="Usuário" AnchorPane.rightAnchor="11.0">
+            <items>
+               <MenuItem fx:id="MunuIem_minimiz" mnemonicParsing="false" onAction="#minimize_stage" text="Minimizar" />
+               <MenuItem fx:id="MunuIem_maximaz" mnemonicParsing="false" onAction="#maximize_stage" text="Maximizar" />
+               <MenuItem fx:id="MunuIem_sair" mnemonicParsing="false" onAction="#LogOutPos" text="Sair (LogOut)" />
+               <MenuItem fx:id="MunuIem_fechar" mnemonicParsing="false" onAction="#handleclose" text="Fechar (Exit)" />
+            </items>
+            <font>
+               <Font name="Microsoft PhagsPa Bold" size="13.0" />
+            </font>
+         </MenuButton>
+         <JFXHamburger fx:id="Hamburger" layoutX="232.0" layoutY="31.0" onKeyPressed="#Mtd_Humburguer" />
+      </AnchorPane>
+   </top>
+   <left>
+      <JFXDrawer fx:id="Drawer" defaultDrawerSize="221.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="222.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="Vbox_MenuLateral" minWidth="-Infinity" prefHeight="565.0" prefWidth="222.0" style="-fx-background-color: #3A3332;">
+               <children>
+                  <VBox fx:id="btnLateral_1_home" alignment="TOP_CENTER" minWidth="-Infinity" prefHeight="58.0" prefWidth="171.0" styleClass="hover_btnpainel">
+                     <children>
+
+                        <Label prefHeight="5.0" prefWidth="37.0" text="Início" textAlignment="CENTER" textFill="#8bbfc6">
+                           <font>
+                              <Font name="Franklin Gothic Demi Cond" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="-3.0" />
+                           </VBox.margin>
+                        </Label>
+
+                     </children>
+                  </VBox>
+                  <VBox fx:id="btnLateral_2_Cadastro" alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" minWidth="-Infinity" prefHeight="58.0" prefWidth="222.0" styleClass="hover_btnpainel">
+                     <children>
+
+                        <Label prefHeight="11.0" prefWidth="57.0" text="Cadastro" textAlignment="CENTER" textFill="#8bbfc6">
+                           <font>
+                              <Font name="Franklin Gothic Demi Cond" size="15.0" />
+                           </font>
+                        </Label>
+
+                     </children>
+                  </VBox>
+                  <VBox fx:id="btnLateral_3_Servicos" alignment="TOP_CENTER" layoutX="10.0" layoutY="68.0" minWidth="-Infinity" prefHeight="58.0" prefWidth="222.0" styleClass="hover_btnpainel">
+                     <children>
+
+                        <Label prefHeight="7.0" prefWidth="49.0" text="Serviços" textAlignment="CENTER" textFill="#8bbfc6">
+                           <font>
+                              <Font name="Franklin Gothic Demi Cond" size="15.0" />
+                           </font>
+                        </Label>
+
+                     </children>
+                  </VBox>
+                  <VBox fx:id="btnLateral_4_Ordem" alignment="TOP_CENTER" layoutX="10.0" layoutY="126.0" minWidth="-Infinity" prefHeight="58.0" prefWidth="222.0" styleClass="hover_btnpainel">
+                     <children>
+
+                        <Label prefHeight="12.0" prefWidth="102.0" text="Ordem de Serviço" textAlignment="CENTER" textFill="#8bbfc6">
+                           <font>
+                              <Font name="Franklin Gothic Demi Cond" size="15.0" />
+                           </font>
+                        </Label>
+
+                     </children>
+                  </VBox>
+                  <VBox fx:id="btnLateral_5_Proformas" alignment="TOP_CENTER" layoutX="10.0" layoutY="184.0" minWidth="-Infinity" prefHeight="58.0" prefWidth="222.0" styleClass="hover_btnpainel">
+                     <children>
+
+                        <Label prefHeight="15.0" prefWidth="65.0" text="Pro-formas" textAlignment="CENTER" textFill="#8bbfc6">
+                           <font>
+                              <Font name="Franklin Gothic Demi Cond" size="15.0" />
+                           </font>
+                        </Label>
+
+                     </children>
+                  </VBox>
+                  <VBox fx:id="btnLateral_6_Acessorios" alignment="TOP_CENTER" layoutX="10.0" layoutY="242.0" minWidth="-Infinity" prefHeight="58.0" prefWidth="222.0" styleClass="hover_btnpainel">
+                     <children>
+
+                        <Label prefHeight="15.0" prefWidth="64.0" text="Acessorios" textAlignment="CENTER" textFill="#8bbfc6">
+                           <font>
+                              <Font name="Franklin Gothic Demi Cond" size="15.0" />
+                           </font>
+                        </Label>
+
+                     </children>
+                  </VBox>
+                  <VBox fx:id="btnLateral_7_Finaceira" alignment="TOP_CENTER" layoutX="10.0" layoutY="300.0" minWidth="-Infinity" prefHeight="58.0" prefWidth="222.0" styleClass="hover_btnpainel">
+                     <children>
+
+                        <Label prefHeight="9.0" prefWidth="69.0" text="Financeira" textAlignment="CENTER" textFill="#8bbfc6">
+                           <font>
+                              <Font name="Franklin Gothic Demi Cond" size="15.0" />
+                           </font>
+                        </Label>
+
+                     </children>
+                  </VBox>
+                  <VBox fx:id="btnLateral_8_Fornecedor" alignment="TOP_CENTER" layoutX="10.0" layoutY="358.0" minWidth="-Infinity" prefHeight="58.0" prefWidth="222.0" styleClass="hover_btnpainel">
+                     <children>
+
+                        <Label prefHeight="5.0" prefWidth="81.0" text="Fornecedores" textAlignment="CENTER" textFill="#8bbfc6">
+                           <font>
+                              <Font name="Franklin Gothic Demi Cond" size="15.0" />
+                           </font>
+                        </Label>
+
+                     </children>
+                  </VBox>
+                  <VBox fx:id="btnLateral_9_Comissoes" alignment="TOP_CENTER" layoutX="10.0" layoutY="416.0" minWidth="-Infinity" prefHeight="58.0" prefWidth="222.0" styleClass="hover_btnpainel">
+                     <children>
+
+                        <Label prefHeight="15.0" prefWidth="63.0" text="Comissões" textAlignment="CENTER" textFill="#8bbfc6">
+                           <font>
+                              <Font name="Franklin Gothic Demi Cond" size="15.0" />
+                           </font>
+                        </Label>
+
+                     </children>
+                  </VBox>
+                  <VBox fx:id="btnLateral_10_Config" alignment="CENTER" layoutX="10.0" layoutY="474.0" minWidth="-Infinity" prefHeight="58.0" prefWidth="222.0" styleClass="hover_btnpainel">
+                     <children>
+
+                        <Label prefHeight="23.0" prefWidth="86.0" text="Configurações" textAlignment="CENTER" textFill="#8bbfc6">
+                           <font>
+                              <Font name="Franklin Gothic Demi Cond" size="15.0" />
+                           </font>
+                        </Label>
+
+                     </children>
+                  </VBox>
+                  <VBox fx:id="btnLateral_10_Config1" alignment="CENTER" layoutX="10.0" layoutY="532.0" minWidth="-Infinity" prefHeight="90.0" prefWidth="222.0" styleClass="hover_btnpainel" VBox.vgrow="SOMETIMES" />
+               </children>
+            </VBox>
+         </children>
+      </JFXDrawer>
+
+
+   </left>
+</BorderPane>
