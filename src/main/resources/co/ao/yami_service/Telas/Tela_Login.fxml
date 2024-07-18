@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="parent_login" maxHeight="-Infinity" prefHeight="360.0" prefWidth="661.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../../../../styles/style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.ao.yami_service.Tela_LoginController">
+   <AnchorPane layoutX="142.0" layoutY="248.0" prefHeight="133.0" prefWidth="313.0" style="-fx-background-color: #D6D1D1; -fx-background-radius: 3px;">
+      <children>
+         <Label layoutX="17.0" layoutY="44.0" prefHeight="46.0" prefWidth="284.0" text="Concebido para gestão eficiente&#10; no ramo de prestação de serviços." textAlignment="CENTER" textFill="#545252">
+            <font>
+               <Font name="Courier New Bold" size="13.0" />
+            </font>
+         </Label>
+         <Label layoutX="44.0" layoutY="-21.0" prefHeight="88.0" prefWidth="221.0" text="YAMI SERVICE">
+            <font>
+               <Font name="Javanese Text" size="30.0" />
+            </font>
+         </Label>
+         <Separator layoutX="7.0" layoutY="39.0" prefHeight="3.0" prefWidth="298.0" />
+      </children>
+   </AnchorPane>
+   <Label fx:id="label" layoutX="108.0" layoutY="239.0" minHeight="16" minWidth="69" />
+   <CubicCurve controlX1="4.7994537353515625" controlX2="283.82855224609375" controlY1="-125.0" controlY2="236.0" endX="283.82855224609375" endY="-125.0" fill="#21cbff96" layoutX="177.0" layoutY="150.0" startX="-177.0" startY="236.0" stroke="#8d8686" />
+   <Label layoutX="14.0" layoutY="199.0" prefHeight="25.0" prefWidth="149.0" text="Esqueceu a senha?" textFill="#514a4a" underline="true">
+      <font>
+         <Font name="Courier New Bold" size="13.0" />
+      </font>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Label>
+   <HBox alignment="CENTER_RIGHT" layoutX="13.0" layoutY="83.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" opacity="0.8" prefHeight="46.0" prefWidth="324.0">
+      <children>
+         <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="47.0" style="-fx-background-color: #1F1F1F;" />
+         <TextField fx:id="textField_user" prefHeight="47.0" prefWidth="275.0">
+            <font>
+               <Font name="Tahoma" size="22.0" />
+            </font>
+         </TextField>
+      </children>
+   </HBox>
+   <HBox alignment="CENTER_RIGHT" layoutX="14.0" layoutY="151.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" opacity="0.8" prefHeight="46.0" prefWidth="324.0">
+      <children>
+         <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="47.0" style="-fx-background-color: #1F1F1F;" />
+         <PasswordField fx:id="textField_senha" prefHeight="47.0" prefWidth="275.0">
+            <font>
+               <Font size="16.0" />
+            </font></PasswordField>
+      </children>
+   </HBox>
+   <HBox fx:id="top" alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#makeStageDragable" onDragEntered="#makeStageDragable" prefHeight="36.0" prefWidth="661.0" styleClass="closePane">
+      <children>
+         <Label alignment="CENTER_RIGHT" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="595.0" styleClass="textField" stylesheets="@../../../../styles/style.css" text="Tela De Login" textFill="#9f2323">
+            <font>
+               <Font name="Tahoma Bold" size="14.0" />
+            </font>
+         </Label>
+         <HBox>
+            <children>
+               <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="53.0">
+                  <children>
+                     <HBox layoutX="10.0" layoutY="10.0" onMouseClicked="#minimize_stage" prefHeight="25.0" prefWidth="25.0" />
+                     <HBox onMouseClicked="#handleclose" prefHeight="25.0" prefWidth="25.0">
+                    
+                        <HBox.margin>
+                           <Insets />
+                        </HBox.margin></HBox>
+                  </children>
+               </HBox>
+            </children>
+         </HBox>
+      </children>
+      <padding>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </padding>
+   </HBox>
+   <AnchorPane fx:id="painel_users" layoutX="463.0" layoutY="35.0" minHeight="-Infinity" prefHeight="353.0" prefWidth="198.0" style="-fx-background-color: #D6D1D1;">
+      <effect>
+         <InnerShadow height="5.0" radius="2.0" width="5.0" />
+      </effect>
+      <children>
+         <HBox fx:id="Hbox_image1" alignment="CENTER" fillHeight="false" layoutX="16.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#handle_User1" prefHeight="60.0" prefWidth="70.0">
+            <children>
+               <Circle fill="WHITE" radius="30.0" stroke="TRANSPARENT" strokeType="INSIDE" translateX="57.0" translateY="-7.0" />
+               <ImageView fx:id="image_view1" fitHeight="68.0" fitWidth="60.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" scaleZ="0.0" style="-fx-border-color: #FFFFFF; -fx-border-radius: 50px; -fx-border-insets: 3px;" translateX="-3.0" translateY="-6.0">
+                  <image>
+                     <Image url="@../../../../imagens/User_1%20.png" />
+                  </image>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </ImageView>
+               <Label fx:id="user_label_name_1" alignment="TOP_CENTER" contentDisplay="CENTER" lineSpacing="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="65.0" style="-fx-background-color: #977471; -fx-border-radius: 0.5em; -fx-background-radius: 0.5em;" textFill="WHITE" translateX="-65.0" translateY="20.0">
+                  <font>
+                     <Font name="System Bold" size="14.0" />
+                  </font>
+                  <opaqueInsets>
+                     <Insets />
+                  </opaqueInsets>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </Label>
+            </children>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </HBox>
+         <HBox fx:id="Hbox_image2" alignment="CENTER" fillHeight="false" layoutX="114.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#handle_User2" prefHeight="60.0" prefWidth="70.0">
+            <children>
+               <Circle fill="WHITE" radius="30.0" stroke="TRANSPARENT" strokeType="INSIDE" translateX="57.0" translateY="-7.0" />
+               <ImageView fx:id="image_view2" fitHeight="68.0" fitWidth="60.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" scaleZ="0.0" style="-fx-border-color: #FFFFFF; -fx-border-radius: 50px; -fx-border-insets: 3px;" translateX="-3.0" translateY="-6.0">
+                  <image>
+                     <Image url="@../../../../imagens/User_1%20.png" />
+                  </image>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </ImageView>
+               <Label fx:id="user_label_name_2" alignment="TOP_CENTER" contentDisplay="CENTER" lineSpacing="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="65.0" style="-fx-background-color: #977471; -fx-border-radius: 0.5em; -fx-background-radius: 0.5em;" textFill="WHITE" translateX="-65.0" translateY="20.0">
+                  <font>
+                     <Font name="System Bold" size="14.0" />
+                  </font>
+                  <opaqueInsets>
+                     <Insets />
+                  </opaqueInsets>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </Label>
+            </children>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </HBox>
+         <HBox fx:id="Hbox_image3" alignment="CENTER" fillHeight="false" layoutX="15.0" layoutY="108.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#handle_User3" prefHeight="60.0" prefWidth="70.0">
+            <children>
+               <Circle fill="WHITE" radius="30.0" stroke="TRANSPARENT" strokeType="INSIDE" translateX="57.0" translateY="-7.0" />
+               <ImageView fx:id="image_view3" fitHeight="68.0" fitWidth="60.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" scaleZ="0.0" style="-fx-border-color: #FFFFFF; -fx-border-radius: 50px; -fx-border-insets: 3px;" translateX="-3.0" translateY="-6.0">
+                  <image>
+                     <Image url="@../../../../imagens/User_1%20.png" />
+                  </image>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </ImageView>
+               <Label fx:id="user_label_name_3" alignment="TOP_CENTER" contentDisplay="CENTER" lineSpacing="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="65.0" style="-fx-background-color: #977471; -fx-border-radius: 0.5em; -fx-background-radius: 0.5em;" textFill="WHITE" translateX="-65.0" translateY="20.0">
+                  <font>
+                     <Font name="System Bold" size="14.0" />
+                  </font>
+                  <opaqueInsets>
+                     <Insets />
+                  </opaqueInsets>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </Label>
+            </children>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </HBox>
+         <HBox fx:id="Hbox_image4" alignment="CENTER" fillHeight="false" layoutX="113.0" layoutY="108.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#handle_User4" prefHeight="60.0" prefWidth="70.0">
+            <children>
+               <Circle fill="WHITE" radius="30.0" stroke="TRANSPARENT" strokeType="INSIDE" translateX="57.0" translateY="-7.0" />
+               <ImageView fx:id="image_view4" fitHeight="68.0" fitWidth="60.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" scaleZ="0.0" style="-fx-border-color: #FFFFFF; -fx-border-radius: 50px; -fx-border-insets: 3px;" translateX="-3.0" translateY="-6.0">
+                  <image>
+                     <Image url="@../../../../imagens/User_1%20.png" />
+                  </image>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </ImageView>
+               <Label fx:id="user_label_name_4" alignment="TOP_CENTER" contentDisplay="CENTER" lineSpacing="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="65.0" style="-fx-background-color: #977471; -fx-border-radius: 0.5em; -fx-background-radius: 0.5em;" textFill="WHITE" translateX="-65.0" translateY="20.0">
+                  <font>
+                     <Font name="System Bold" size="14.0" />
+                  </font>
+                  <opaqueInsets>
+                     <Insets />
+                  </opaqueInsets>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </Label>
+            </children>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </HBox>
+         <HBox fx:id="Hbox_image5" alignment="CENTER" fillHeight="false" layoutX="15.0" layoutY="195.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#handle_User5" prefHeight="60.0" prefWidth="70.0">
+            <children>
+               <Circle fill="WHITE" radius="30.0" stroke="TRANSPARENT" strokeType="INSIDE" translateX="57.0" translateY="-7.0" />
+               <ImageView fx:id="image_view5" fitHeight="68.0" fitWidth="60.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" scaleZ="0.0" style="-fx-border-color: #FFFFFF; -fx-border-radius: 50px; -fx-border-insets: 3px;" translateX="-3.0" translateY="-6.0">
+                  <image>
+                     <Image url="@../../../../imagens/User_1%20.png" />
+                  </image>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </ImageView>
+               <Label fx:id="user_label_name_5" alignment="TOP_CENTER" contentDisplay="CENTER" lineSpacing="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="65.0" style="-fx-background-color: #977471; -fx-border-radius: 0.5em; -fx-background-radius: 0.5em;" textFill="WHITE" translateX="-65.0" translateY="20.0">
+                  <font>
+                     <Font name="System Bold" size="14.0" />
+                  </font>
+                  <opaqueInsets>
+                     <Insets />
+                  </opaqueInsets>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </Label>
+            </children>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </HBox>
+         <HBox fx:id="Hbox_image6" alignment="CENTER" fillHeight="false" layoutX="113.0" layoutY="195.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#handle_User6" prefHeight="60.0" prefWidth="70.0">
+            <children>
+               <Circle fill="WHITE" radius="30.0" stroke="TRANSPARENT" strokeType="INSIDE" translateX="57.0" translateY="-7.0" />
+               <ImageView fx:id="image_view6" fitHeight="68.0" fitWidth="60.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" scaleZ="0.0" style="-fx-border-color: #FFFFFF; -fx-border-radius: 50px; -fx-border-insets: 3px;" translateX="-3.0" translateY="-6.0">
+                  <image>
+                     <Image url="@../../../../imagens/User_1%20.png" />
+                  </image>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </ImageView>
+               <Label fx:id="user_label_name_6" alignment="TOP_CENTER" contentDisplay="CENTER" lineSpacing="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="65.0" style="-fx-background-color: #977471; -fx-border-radius: 0.5em; -fx-background-radius: 0.5em;" textFill="WHITE" translateX="-65.0" translateY="20.0">
+                  <font>
+                     <Font name="System Bold" size="14.0" />
+                  </font>
+                  <opaqueInsets>
+                     <Insets />
+                  </opaqueInsets>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </Label>
+            </children>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </HBox>
+         <HBox fx:id="Hbox_image7" alignment="CENTER" fillHeight="false" layoutX="17.0" layoutY="286.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#handle_User7" prefHeight="60.0" prefWidth="70.0">
+            <children>
+               <Circle fill="WHITE" radius="30.0" stroke="TRANSPARENT" strokeType="INSIDE" translateX="57.0" translateY="-7.0" />
+               <ImageView fx:id="image_view7" fitHeight="68.0" fitWidth="60.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" scaleZ="0.0" style="-fx-border-color: #FFFFFF; -fx-border-radius: 50px; -fx-border-insets: 3px;" translateX="-3.0" translateY="-6.0">
+                  <image>
+                     <Image url="@../../../../imagens/User_1%20.png" />
+                  </image>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </ImageView>
+               <Label fx:id="user_label_name_7" alignment="TOP_CENTER" contentDisplay="CENTER" lineSpacing="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="65.0" style="-fx-background-color: #977471; -fx-border-radius: 0.5em; -fx-background-radius: 0.5em;" textFill="WHITE" translateX="-65.0" translateY="20.0">
+                  <font>
+                     <Font name="System Bold" size="14.0" />
+                  </font>
+                  <opaqueInsets>
+                     <Insets />
+                  </opaqueInsets>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </Label>
+            </children>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </HBox>
+         <HBox fx:id="Hbox_image8" alignment="CENTER" fillHeight="false" layoutX="115.0" layoutY="286.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#handle_User8" prefHeight="60.0" prefWidth="70.0">
+            <children>
+               <Circle fill="WHITE" radius="30.0" stroke="TRANSPARENT" strokeType="INSIDE" translateX="57.0" translateY="-7.0" />
+               <ImageView fx:id="image_view8" fitHeight="68.0" fitWidth="60.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" scaleZ="0.0" style="-fx-border-color: #FFFFFF; -fx-border-radius: 50px; -fx-border-insets: 3px;" translateX="-3.0" translateY="-6.0">
+                  <image>
+                     <Image url="@../../../../imagens/User_1%20.png" />
+                  </image>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </ImageView>
+               <Label fx:id="user_label_name_8" alignment="TOP_CENTER" contentDisplay="CENTER" lineSpacing="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="65.0" style="-fx-background-color: #977471; -fx-border-radius: 0.5em; -fx-background-radius: 0.5em;" textFill="WHITE" translateX="-65.0" translateY="20.0">
+                  <font>
+                     <Font name="System Bold" size="14.0" />
+                  </font>
+                  <opaqueInsets>
+                     <Insets />
+                  </opaqueInsets>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </Label>
+            </children>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </HBox>
+      </children>
+   </AnchorPane>
+   <AnchorPane fx:id="painel_keyboard" layoutX="463.0" layoutY="35.0" minHeight="-Infinity" prefHeight="353.0" prefWidth="198.0" style="-fx-background-color: #D6D1D1;" visible="false">
+      <children>
+         <JFXButton fx:id="btn_A" layoutX="4.0" layoutY="2.0" minHeight="-Infinity" prefHeight="28.0" prefWidth="33.0" style="-fx-background-color: #e1946a;" text="A" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_B" layoutX="43.0" layoutY="2.0" minHeight="-Infinity" prefHeight="28.0" prefWidth="33.0" style="-fx-background-color: #e1946a;" text="B" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_C" layoutX="82.0" layoutY="2.0" minHeight="-Infinity" prefHeight="28.0" prefWidth="33.0" style="-fx-background-color: #e1946a;" text="C" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_D" layoutX="121.0" layoutY="2.0" minHeight="-Infinity" prefHeight="28.0" prefWidth="33.0" style="-fx-background-color: #e1946a;" text="D" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_E" layoutX="160.0" layoutY="2.0" minHeight="-Infinity" prefHeight="28.0" prefWidth="33.0" style="-fx-background-color: #e1946a;" text="E" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_F" layoutX="4.0" layoutY="33.0" minHeight="-Infinity" prefHeight="28.0" prefWidth="33.0" style="-fx-background-color: #e1946a;" text="F" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_G" layoutX="43.0" layoutY="33.0" minHeight="-Infinity" prefHeight="28.0" prefWidth="33.0" style="-fx-background-color: #e1946a;" text="G" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_H" layoutX="82.0" layoutY="33.0" minHeight="-Infinity" prefHeight="28.0" prefWidth="33.0" style="-fx-background-color: #e1946a;" text="H" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_I" layoutX="121.0" layoutY="33.0" minHeight="-Infinity" prefHeight="28.0" prefWidth="33.0" style="-fx-background-color: #e1946a;" text="I" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_J" layoutX="160.0" layoutY="33.0" minHeight="-Infinity" prefHeight="28.0" prefWidth="33.0" style="-fx-background-color: #e1946a;" text="J" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_K" layoutX="4.0" layoutY="64.0" minHeight="-Infinity" prefHeight="28.0" prefWidth="33.0" style="-fx-background-color: #e1946a;" text="K" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_L" layoutX="43.0" layoutY="64.0" minHeight="-Infinity" prefHeight="28.0" prefWidth="33.0" style="-fx-background-color: #e1946a;" text="L" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_L" layoutX="82.0" layoutY="64.0" minHeight="-Infinity" prefHeight="28.0" prefWidth="33.0" style="-fx-background-color: #e1946a;" text="M" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_N" layoutX="122.0" layoutY="64.0" minHeight="-Infinity" prefHeight="28.0" prefWidth="33.0" style="-fx-background-color: #e1946a;" text="N" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_O" layoutX="160.0" layoutY="64.0" minHeight="-Infinity" prefHeight="28.0" prefWidth="33.0" style="-fx-background-color: #e1946a;" text="O" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_P" layoutX="4.0" layoutY="95.0" minHeight="-Infinity" prefHeight="28.0" prefWidth="33.0" style="-fx-background-color: #e1946a;" text="P" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_Q" layoutX="43.0" layoutY="95.0" minHeight="-Infinity" prefHeight="28.0" prefWidth="33.0" style="-fx-background-color: #e1946a;" text="Q" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_R" layoutX="82.0" layoutY="95.0" minHeight="-Infinity" prefHeight="28.0" prefWidth="33.0" style="-fx-background-color: #e1946a;" text="R" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_S" layoutX="121.0" layoutY="95.0" minHeight="-Infinity" prefHeight="28.0" prefWidth="33.0" style="-fx-background-color: #e1946a;" text="S" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_T" layoutX="160.0" layoutY="95.0" minHeight="-Infinity" prefHeight="28.0" prefWidth="33.0" style="-fx-background-color: #e1946a;" text="T" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_U" layoutX="4.0" layoutY="126.0" minHeight="-Infinity" prefHeight="28.0" prefWidth="33.0" style="-fx-background-color: #e1946a;" text="U" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_V" layoutX="43.0" layoutY="126.0" minHeight="-Infinity" prefHeight="28.0" prefWidth="33.0" style="-fx-background-color: #e1946a;" text="V" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_W" layoutX="82.0" layoutY="126.0" minHeight="-Infinity" prefHeight="28.0" prefWidth="33.0" style="-fx-background-color: #e1946a;" text="W" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_Y" layoutX="122.0" layoutY="126.0" minHeight="-Infinity" prefHeight="28.0" prefWidth="33.0" style="-fx-background-color: #e1946a;" text="Y" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_Z" layoutX="161.0" layoutY="126.0" minHeight="-Infinity" prefHeight="28.0" prefWidth="33.0" style="-fx-background-color: #e1946a;" text="Z" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </JFXButton>
+         <Separator layoutX="4.0" layoutY="156.0" prefHeight="3.0" prefWidth="190.0" />
+         <JFXButton fx:id="btn_1" layoutX="12.0" layoutY="161.0" minHeight="-Infinity" onAction="#handle_Senha" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #7e7f80; -fx-background-radius: 45px;" text="1" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_2" layoutX="74.0" layoutY="161.0" minHeight="-Infinity" onAction="#handle_Senha" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #7e7f80; -fx-background-radius: 45px;" text="2" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_3" layoutX="142.0" layoutY="161.0" minHeight="-Infinity" onAction="#handle_Senha" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #7e7f80; -fx-background-radius: 45px;" text="3" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_4" layoutX="12.0" layoutY="208.0" minHeight="-Infinity" onAction="#handle_Senha" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #7e7f80; -fx-background-radius: 45px;" text="4" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_5" layoutX="75.0" layoutY="208.0" minHeight="-Infinity" onAction="#handle_Senha" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #7e7f80; -fx-background-radius: 45px;" text="5" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_6" layoutX="142.0" layoutY="208.0" minHeight="-Infinity" onAction="#handle_Senha" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #7e7f80; -fx-background-radius: 45px;" text="6" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_7" layoutX="13.0" layoutY="256.0" minHeight="-Infinity" onAction="#handle_Senha" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #7e7f80; -fx-background-radius: 45px;" text="7" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_8" layoutX="76.0" layoutY="256.0" minHeight="-Infinity" onAction="#handle_Senha" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #7e7f80; -fx-background-radius: 45px;" text="8" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_9" layoutX="143.0" layoutY="256.0" minHeight="-Infinity" onAction="#handle_Senha" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #7e7f80; -fx-background-radius: 45px;" text="9" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_0" layoutX="13.0" layoutY="304.0" minHeight="-Infinity" onAction="#handle_Senha" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #7e7f80; -fx-background-radius: 45px;" text="0" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_Del" layoutX="76.0" layoutY="304.0" minHeight="-Infinity" onAction="#handle_Senha" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #e1946a; -fx-background-radius: 45px;" text="DEL" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font>
+         </JFXButton>
+         <JFXButton fx:id="btn_Ok" layoutX="143.0" layoutY="304.0" minHeight="-Infinity" onMouseClicked="#handle_Login" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #3492ae; -fx-background-radius: 45px;" text="OK" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="15.0" />
+            </font>
+         </JFXButton>
+      </children>
+      <effect>
+         <InnerShadow height="5.0" radius="2.0" width="5.0" />
+      </effect>
+   </AnchorPane>
+</AnchorPane>

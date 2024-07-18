@@ -133,7 +133,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>co.ao.yami_service/co.ao.yami_service.Launch</mainClass>
+                            <mainClass>co.ao.yami_service/co.ao.yami_service.Launch_Service</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>

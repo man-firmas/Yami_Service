@@ -1,0 +1,157 @@
+
+.hover_btnpainel:hover{
+    
+    -fx-background-color: #504645; 
+}
+.hover_btnpainel:disabled{
+    
+    -fx-background-color: #23201F; 
+}
+.textField{
+-fx-background-color: #3F3F3F;   
+-fx-background-radius:0px;
+-fx-prompt-text-fill:#ffffff;
+-fx-text-fill:#ffffff;   
+}
+
+.textField:focused{
+-fx-background-color: #389fbf;   
+-fx-background-radius:0px;
+-fx-prompt-text-fill:#ffffff;
+-fx-text-fill:#ffffff;       
+}
+.closePane{
+  -fx-background-color:#3F3F3F;     
+}
+
+.hover_btnpainel2:hover{
+    
+    -fx-background-color: #ECA6A6;
+}
+.hover_btnpainel2:pressed{  
+    -fx-background-color: #C1605E; 
+}
+
+.hover_btnpainel2{   
+    -fx-background-color: #E48181;
+}
+.hover_btnpainel3:hover{   
+    -fx-background-color: #62CA64;
+}
+.hover_btnpainel3:pressed{  
+    -fx-background-color: #377338; 
+}
+
+.hover_btnpainel3{
+    -fx-background-color: #56AD58;
+}
+
+.tabela_listar {
+ -fx-background-color: black, white, black;
+    -fx-background-fills:  #56AD58;
+    -fx-stroke: derive(goldenrod,-20%);
+}
+
+.table-view{   
+ -fx-background-color: transparent;      
+}
+.table-view:focused{   
+ -fx-background-color: transparent;      
+ 
+}
+/**
+.table-row-cell:odd{
+    -fx-background-color: #C3C39E; 
+    -fx-background-insets: 0, 0 0 1 0;
+}
+
+table-view-cell:even{
+    -fx-background-color: #ffb3b3; 
+    -fx-background-insets: 0, 0 0 1 0; 
+}
+**/
+.btn_logout{
+    -fx-background-color:#E9E9E9; 
+}
+.btn_logout:hover{
+    -fx-background-color:#B9BFC4;
+}
+
+.textField_impri{
+-fx-background-color: #827471;   
+-fx-background-radius:0px;
+-fx-prompt-text-fill:#546BAA ;
+-fx-text-fill:#546BAA;  
+-fx-font-size: 13;
+}
+.Combobox_listarOrd_Impr{
+-fx-background-color: #F4F4F4;   
+-fx-background-radius:0px;
+-fx-prompt-text-fill:#3C3C3C ;
+-fx-text-fill :#3C3C3C;  
+-fx-font: bold italic large Paladino;
+-fx-font-size :12px;
+-fx-font-weigt :100%;
+}
+
+.Combobox_listarOrd_Impr:focused{
+-fx-background-color: #CEC7C6;   
+-fx-background-radius:0px;
+-fx-prompt-text-fill:#ffffff;
+-fx-text-fill:#ffffff;  
+}
+
+.Combobox_listarOrd_Impr:showing{
+-fx-background-color: #AFA5A3;   
+-fx-background-radius:0px;
+-fx-prompt-text-fill:#ffffff;
+-fx-text-fill:#ffffff;  
+}
+
+.btn_Ded_impri{
+    -fx-background-color:  #8C5551;
+}
+.btn_Ded_impri:hover{
+    -fx-background-color: #AE7773;
+}
+
+.btn_Ded_impri:pressed{
+    -fx-background-color: #5F3936;
+}
+
+.Btn_RegistarPgmt{
+    -fx-background-color: #D75764;
+}
+.Btn_RegistarPgmt:hover{
+    -fx-background-color: #E38A93;
+}
+
+.Btn_RegistarPgmt:pressed{
+    -fx-background-color: #AF2937;
+}
+.Btn_Consut{
+    -fx-background-color: #3C3C3C;
+}
+.Btn_Consut:hover{
+    -fx-background-color: #555555;
+}
+
+.Btn_Consut:pressed{
+    -fx-background-color: #272727;
+}
+.Btn_Finalizar{
+    -fx-background-color: #3A7B89;
+}
+.Btn_Finalizar:hover{
+    -fx-background-color: #4A9DAE;
+}
+
+.Btn_Finalizar:pressed{
+    -fx-background-color: #2E636D;  
+}
+.Label-Painel{
+
+    -fx-text-fill: #bbcdd1;  
+    
+
+}
